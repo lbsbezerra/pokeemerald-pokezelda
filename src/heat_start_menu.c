@@ -163,7 +163,7 @@ static const struct WindowTemplate sSaveInfoWindowTemplate = {
     .tilemapTop = 1,
     .width = 14,
     .height = 10,
-    .paletteNum = 15,
+    .paletteNum = 14,
     .baseBlock = 8
 };
 
@@ -173,7 +173,7 @@ static const struct WindowTemplate sWindowTemplate_StartClock = {
   .tilemapTop = 17, 
   .width = 12, // If you want to shorten the dates to Sat., Sun., etc., change this to 9
   .height = 2, 
-  .paletteNum = 15,
+  .paletteNum = 14,
   .baseBlock = 0x30
 };
 
@@ -183,7 +183,7 @@ static const struct WindowTemplate sWindowTemplate_MenuName = {
   .tilemapTop = 17, 
   .width = 7, 
   .height = 2, 
-  .paletteNum = 15,
+  .paletteNum = 14,
   .baseBlock = 0x30 + (12*2)
 };
 
@@ -588,7 +588,7 @@ static void SetSelectedMenu(void) {
 static void ShowSafariBallsWindow(void)
 {
     sHeatStartMenu->sSafariBallsWindowId = AddWindow(&sWindowTemplate_SafariBalls);
-    FillWindowPixelBuffer(sHeatStartMenu->sSafariBallsWindowId, PIXEL_FILL(TEXT_COLOR_WHITE));
+    FillWindowPixelBuffer(sHeatStartMenu->sSafariBallsWindowId, PIXEL_FILL(TEXT_COLOR_DARK_GRAY));
     PutWindowTilemap(sHeatStartMenu->sSafariBallsWindowId);
     ConvertIntToDecimalStringN(gStringVar1, gNumSafariBalls, STR_CONV_MODE_RIGHT_ALIGN, 2);
     StringExpandPlaceholders(gStringVar4, gText_SafariBallStock);
@@ -803,11 +803,11 @@ static void HeatStartMenu_UpdateClockDisplay(void)
 	CopyWindowToVram(sHeatStartMenu->sStartClockWindowId, COPYWIN_GFX);
 }
 
-static const u8 gText_Poketch[] = _("  PokeNav");
-static const u8 gText_Pokedex[] = _("  Pokédex");
+static const u8 gText_Poketch[] = _("    Slate ");
+static const u8 gText_Pokedex[] = _("  HyliaDex");
 static const u8 gText_Party[]   = _("    Party ");
 static const u8 gText_Bag[]     = _("      Bag  ");
-static const u8 gText_Trainer[] = _("   Trainer");
+static const u8 gText_Trainer[] = _("    Minish");
 static const u8 gText_Save[]    = _("     Save  ");
 static const u8 gText_Options[] = _("   Options");
 static const u8 gText_Flag[]    = _("   Retire");
