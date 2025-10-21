@@ -804,10 +804,10 @@ static void HeatStartMenu_UpdateClockDisplay(void)
 }
 
 static const u8 gText_Poketch[] = _("    Slate ");
-static const u8 gText_Pokedex[] = _("  HyliaDex");
+static const u8 gText_Pokedex[] = _(" Hylia Dex");
 static const u8 gText_Party[]   = _("    Party ");
 static const u8 gText_Bag[]     = _("      Bag  ");
-static const u8 gText_Trainer[] = _("    Minish");
+static const u8 gText_Trainer[] = _("    My Map");
 static const u8 gText_Save[]    = _("     Save  ");
 static const u8 gText_Options[] = _("   Options");
 static const u8 gText_Flag[]    = _("   Retire");
