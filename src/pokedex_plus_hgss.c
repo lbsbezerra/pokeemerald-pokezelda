@@ -655,29 +655,35 @@ enum
 };
 static const u8 sStatBarsGfx[] = INCBIN_U8("graphics/pokedex/hgss/stat_bars.4bpp");
 static const u16 sStatBarPalette[16] = {
-    [COLOR_ID_ALPHA] = RGB(0, 0, 10),
-    [COLOR_ID_BAR_WHITE] = RGB_WHITE,
+    [COLOR_ID_ALPHA] = RGB(0, 0, 10), // Same (Alpha/Transparent)
+    [COLOR_ID_BAR_WHITE] = RGB(2, 3, 7),   // Previously with 2,3,7 to match background. Same (Bar separator/Outline)
 
-    [COLOR_ID_FILL + COLOR_BEST * 2] = RGB(2, 25, 25),
-    [COLOR_ID_FILL_SHADOW + COLOR_BEST * 2] = RGB(13, 27, 27),
+    // BEST (e.g., HP/Attack) - Was RGB(2, 25, 25) / RGB(13, 27, 27)
+    [COLOR_ID_FILL + COLOR_BEST * 2] = RGB(0, 15, 17),      // Reduced from (2, 25, 25) to match blue tone from the dex
+    [COLOR_ID_FILL_SHADOW + COLOR_BEST * 2] = RGB(0, 15, 17), // Reduced from (13, 27, 27)
 
-    [COLOR_ID_FILL + COLOR_VERY_GOOD * 2] = RGB(11, 25, 2),
-    [COLOR_ID_FILL_SHADOW + COLOR_VERY_GOOD * 2] = RGB(19, 27, 13),
+    // VERY_GOOD (e.g., Defense/Sp. Atk) - Was RGB(11, 25, 2) / RGB(19, 27, 13)
+    [COLOR_ID_FILL + COLOR_VERY_GOOD * 2] = RGB(0, 15, 17),    // Reduced from (11, 25, 2)
+    [COLOR_ID_FILL_SHADOW + COLOR_VERY_GOOD * 2] = RGB(0, 15, 17), // Reduced from (19, 27, 13)
 
-    [COLOR_ID_FILL + COLOR_GOOD * 2] = RGB(22, 25, 2),
-    [COLOR_ID_FILL_SHADOW + COLOR_GOOD * 2] = RGB(26, 27, 13),
+    // GOOD (e.g., Speed) - Was RGB(22, 25, 2) / RGB(26, 27, 13)
+    [COLOR_ID_FILL + COLOR_GOOD * 2] = RGB(0, 15, 17),       // Reduced from (22, 25, 2)
+    [COLOR_ID_FILL_SHADOW + COLOR_GOOD * 2] = RGB(0, 15, 17), // Reduced from (26, 27, 13)
 
-    [COLOR_ID_FILL + COLOR_AVERAGE * 2] = RGB(25, 22, 2),
-    [COLOR_ID_FILL_SHADOW + COLOR_AVERAGE * 2] = RGB(27, 26, 13),
+    // AVERAGE (e.g., Sp. Def) - Was RGB(25, 22, 2) / RGB(27, 26, 13)
+    [COLOR_ID_FILL + COLOR_AVERAGE * 2] = RGB(0, 15, 17),     // Reduced from (25, 22, 2)
+    [COLOR_ID_FILL_SHADOW + COLOR_AVERAGE * 2] = RGB(0, 15, 17), // Reduced from (27, 26, 13)
 
-    [COLOR_ID_FILL + COLOR_BAD * 2] = RGB(25, 17, 2),
-    [COLOR_ID_FILL_SHADOW + COLOR_BAD * 2] = RGB(27, 22, 13),
+    // BAD (e.g., Stats around 60) - Was RGB(25, 17, 2) / RGB(27, 22, 13)
+    [COLOR_ID_FILL + COLOR_BAD * 2] = RGB(0, 15, 17),        // Reduced from (25, 17, 2)
+    [COLOR_ID_FILL_SHADOW + COLOR_BAD * 2] = RGB(0, 15, 17), // Reduced from (27, 22, 13)
 
-    [COLOR_ID_FILL + COLOR_WORST * 2] = RGB(25, 4, 2),
-    [COLOR_ID_FILL_SHADOW + COLOR_WORST * 2] = RGB(27, 15, 13),
+    // WORST (e.g., Stats below 50) - Was RGB(25, 4, 2) / RGB(27, 15, 13)
+    [COLOR_ID_FILL + COLOR_WORST * 2] = RGB(0, 15, 17),       // Reduced from (25, 4, 2)
+    [COLOR_ID_FILL_SHADOW + COLOR_WORST * 2] = RGB(0, 15, 17), // Reduced from (27, 15, 13)
 
-    [COLOR_ID_FONT] = RGB_BLACK,
-    [COLOR_ID_FONT_SHADOW] = RGB(22, 22, 22),
+    [COLOR_ID_FONT] = RGB_BLACK,      // Same (Font color)
+    [COLOR_ID_FONT_SHADOW] = RGB(22, 22, 22), // Same (Font shadow)
 };
 static const struct SpritePalette sStatBarSpritePal[] = //{sStatBarPalette, TAG_STAT_BAR};
 {
