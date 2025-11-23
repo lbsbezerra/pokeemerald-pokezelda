@@ -48,6 +48,18 @@ const struct Tileset gTileset_Rustboro =
     .callback = InitTilesetAnim_Rustboro,
 };
 
+// test with new secondary tileset for Clock Town. No animations needed for now, so the callback will be defined as NULL
+const struct Tileset gTileset_Rustboro_ClockTown =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Rustboro_ClockTown,
+    .palettes = gTilesetPalettes_Rustboro_ClockTown,
+    .metatiles = gMetatiles_Rustboro_ClockTown,
+    .metatileAttributes = gMetatileAttributes_Rustboro_ClockTown,
+    .callback = NULL,
+};
+
 const struct Tileset gTileset_Dewford =
 {
     .isCompressed = TRUE,

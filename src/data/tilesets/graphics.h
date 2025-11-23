@@ -42,6 +42,28 @@ const u16 ALIGNED(4) gTilesetPalettes_Rustboro[][16] =
 	INCBIN_U16("data/tilesets/secondary/rustboro/palettes/15.gbapal"),
 };
 
+const u32 gTilesetTiles_Rustboro_ClockTown[] = INCBIN_U32("data/tilesets/secondary/rustboro_clocktown/tiles.4bpp.lz");
+
+const u16 ALIGNED(4) gTilesetPalettes_Rustboro_ClockTown[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/rustboro_clocktown/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rustboro_clocktown/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rustboro_clocktown/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rustboro_clocktown/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rustboro_clocktown/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rustboro_clocktown/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rustboro_clocktown/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rustboro_clocktown/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rustboro_clocktown/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rustboro_clocktown/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rustboro_clocktown/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rustboro_clocktown/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rustboro_clocktown/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rustboro_clocktown/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rustboro_clocktown/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rustboro_clocktown/palettes/15.gbapal"),
+};
+
 const u32 gTilesetTiles_Dewford[] = INCBIN_U32("data/tilesets/secondary/dewford/tiles.4bpp.lz");
 
 const u16 ALIGNED(4) gTilesetPalettes_Dewford[][16] =

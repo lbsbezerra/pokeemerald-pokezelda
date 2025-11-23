@@ -570,6 +570,20 @@
       "elevation": 0,
       "dest_map": "MAP_RUSTBORO_CITY_HOUSE3",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 15,
+      "y": 59,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE104",
+      "dest_warp_id": "8"
+    },
+    {
+      "x": 16,
+      "y": 59,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE104",
+      "dest_warp_id": "9"
     }
   ],
   "coord_events": [

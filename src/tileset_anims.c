@@ -26,6 +26,7 @@ static void _InitSecondaryTilesetAnimation(void);
 static void TilesetAnim_General(u16);
 static void TilesetAnim_Building(u16);
 static void TilesetAnim_Rustboro(u16);
+static void TilesetAnim_Rustboro_ClockTown(u16);
 static void TilesetAnim_Dewford(u16);
 static void TilesetAnim_Slateport(u16);
 static void TilesetAnim_Mauville(u16);
@@ -687,6 +688,14 @@ void InitTilesetAnim_Rustboro(void)
     sSecondaryTilesetAnimCallback = TilesetAnim_Rustboro;
 }
 
+//test with new secondary "InitTilesetAnim" for Clock Town
+void InitTilesetAnim_Rustboro_ClockTown(void)
+{
+    sSecondaryTilesetAnimCounter = 0;
+    sSecondaryTilesetAnimCounterMax = sPrimaryTilesetAnimCounterMax;
+    sSecondaryTilesetAnimCallback = TilesetAnim_Rustboro_ClockTown;
+}
+
 void InitTilesetAnim_Dewford(void)
 {
     sSecondaryTilesetAnimCounter = 0;
@@ -855,6 +864,29 @@ static void TilesetAnim_Rustboro(u16 timer)
         QueueAnimTiles_Rustboro_WindyWater(timer / 8, 6);
     if (timer % 8 == 7)
         QueueAnimTiles_Rustboro_WindyWater(timer / 8, 7);
+}
+
+static void TilesetAnim_Rustboro_ClockTown(u16 timer)
+{
+    /*if (timer % 8 == 0)
+    {
+        QueueAnimTiles_Rustboro_WindyWater(timer / 8, 0);
+        QueueAnimTiles_Rustboro_Fountain(timer / 8);
+    }
+    if (timer % 8 == 1)
+        QueueAnimTiles_Rustboro_WindyWater(timer / 8, 1);
+    if (timer % 8 == 2)
+        QueueAnimTiles_Rustboro_WindyWater(timer / 8, 2);
+    if (timer % 8 == 3)
+        QueueAnimTiles_Rustboro_WindyWater(timer / 8, 3);
+    if (timer % 8 == 4)
+        QueueAnimTiles_Rustboro_WindyWater(timer / 8, 4);
+    if (timer % 8 == 5)
+        QueueAnimTiles_Rustboro_WindyWater(timer / 8, 5);
+    if (timer % 8 == 6)
+        QueueAnimTiles_Rustboro_WindyWater(timer / 8, 6);
+    if (timer % 8 == 7)
+        QueueAnimTiles_Rustboro_WindyWater(timer / 8, 7); */
 }
 
 static void TilesetAnim_Dewford(u16 timer)
