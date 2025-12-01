@@ -34,7 +34,7 @@
     {
       "id": "LAYOUT_RUSTBORO_CITY",
       "name": "RustboroCity_Layout",
-      "width": 40,
+      "width": 46,
       "height": 60,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro_ClockTown",
