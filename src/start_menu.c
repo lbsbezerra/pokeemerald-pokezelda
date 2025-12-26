@@ -578,12 +578,10 @@ static void CreateStartMenuTask(TaskFunc followupFunc)
 
 static bool8 FieldCB_ReturnToFieldStartMenu(void)
 {
-    //if (InitStartMenuStep() == FALSE)
-    //{
-        //return FALSE;
-    //}
-    
-    HeatStartMenu_Init();
+    if (InitStartMenuStep() == FALSE)
+    {
+        return FALSE;
+    }
 
     ReturnToFieldOpenStartMenu();
     return TRUE;

@@ -1758,7 +1758,7 @@ static void Task_NewGameBirchSpeech_ChooseDifficulty(u8 taskId)
 static void Task_NewGameBirchSpeech_Challenge(u8 taskId)
 {
     NewGameBirchSpeech_ClearWindow(0);
-    StringExpandPlaceholders(gStringVar4, gText_Birch_Challenge);
+    StringExpandPlaceholders(gStringVar4, gText_Birch_ChallengeHard);
     AddTextPrinterForMessage(TRUE);
     gTasks[taskId].func = Task_NewGameBirchSpeech_WaitToShowChallengeMenu;
 }

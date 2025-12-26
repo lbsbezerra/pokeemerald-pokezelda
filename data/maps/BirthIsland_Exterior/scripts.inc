@@ -13,6 +13,7 @@ BirthIsland_Exterior_OnReturnToField:
 	end
 
 BirthIsland_Exterior_OnTransition:
+	setflag FLAG_TEMP_HIDE_FOLLOWER
 	setflag FLAG_MAP_SCRIPT_CHECKED_DEOXYS
 	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL
 	setvar VAR_DEOXYS_ROCK_STEP_COUNT, 0
@@ -87,9 +88,11 @@ BirthIsland_Exterior_EventScript_Deoxys::
 	setvar VAR_LAST_TALKED, LOCALID_DEOXYS
 	seteventmon SPECIES_DEOXYS, 70
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	call_if_set FLAG_DIFFICULTY_HARD, BirthIsland_Exterior_EventScript_Deoxys_Hard_Stats
 	special BattleSetup_StartLegendaryBattle
 	waitstate
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	calculatemonstats
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, BirthIsland_Exterior_EventScript_DefeatedDeoxys
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, BirthIsland_Exterior_EventScript_RanFromDeoxys
@@ -97,6 +100,11 @@ BirthIsland_Exterior_EventScript_Deoxys::
 	setflag FLAG_BATTLED_DEOXYS
 	release
 	end
+
+BirthIsland_Exterior_EventScript_Deoxys_Hard_Stats::
+	setvar VAR_0x8000, 500 @HP
+	special SetHpStat
+	return
 
 BirthIsland_Exterior_EventScript_DefeatedDeoxys::
 	setflag FLAG_DEFEATED_DEOXYS

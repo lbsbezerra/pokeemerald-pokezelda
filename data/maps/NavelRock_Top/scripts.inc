@@ -34,6 +34,7 @@ NavelRock_Top_EventScript_TryRemoveHoOh::
 
 NavelRock_Top_EventScript_HoOh::
 	lockall
+	playbgm MUS_HG_HO_OH_APPEARS, FALSE
 	setvar VAR_TEMP_1, 1
 	special SpawnCameraObject
 	setvar VAR_0x8004, 3  @ num loops
@@ -43,10 +44,12 @@ NavelRock_Top_EventScript_HoOh::
 	applymovement OBJ_EVENT_ID_CAMERA, NavelRock_Top_Movement_CameraPanUp
 	waitmovement 0
 	delay 50
-	setweather WEATHER_NONE
+	setweather WEATHER_DROUGHT
 	doweather
 	waitse
 	playmoncry SPECIES_HO_OH, CRY_MODE_ENCOUNTER
+	msgbox Ho_Oh_Text, MSGBOX_NPC
+	closemessage
 	delay 30
 	waitmoncry
 	delay 60
@@ -59,37 +62,54 @@ NavelRock_Top_EventScript_HoOh::
 	special RemoveCameraObject
 	seteventmon SPECIES_HO_OH, 70
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	call_if_set FLAG_DIFFICULTY_HARD, NavelRock_Top_EventScript_HoOh_Hard_Stats
 	special BattleSetup_StartLegendaryBattle
 	waitstate
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	setvar VAR_LAST_TALKED, LOCALID_HO_OH
+	calculatemonstats
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, NavelRock_Top_EventScript_DefeatedHoOh
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, NavelRock_Top_EventScript_RanFromHoOh
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, NavelRock_Top_EventScript_RanFromHoOh
 	setflag FLAG_CAUGHT_HO_OH
-	call_if_set FLAG_EXTRA_LEGENDARIES, NavelRock_Top_Enable_Kanto_Legendaries
+	setweather WEATHER_NONE
+	doweather
+	call_if_set FLAG_EXTRA_LEGENDARIES, NavelRock_Top_Enable_Johto_Legendaries
 	releaseall
 	end
 
-NavelRock_Top_Enable_Kanto_Legendaries::
-	setflag FLAG_UNLOCK_BIRDS
-	playmoncry SPECIES_ARTICUNO, CRY_MODE_NORMAL
+NavelRock_Top_EventScript_HoOh_Hard_Stats::
+	setvar VAR_0x8001, 450 @ATK
+	setvar VAR_0x8003, 500 @SPD
+	special SetAtkStat
+	special SetSpdStat
+	return
+
+NavelRock_Top_Enable_Johto_Legendaries::
+	setflag FLAG_UNLOCK_DOGS
+	playmoncry SPECIES_SUICUNE, CRY_MODE_NORMAL
 	waitmoncry
-	playmoncry SPECIES_ZAPDOS, CRY_MODE_NORMAL
+	playmoncry SPECIES_ENTEI, CRY_MODE_NORMAL
 	waitmoncry
-	playmoncry SPECIES_MOLTRES, CRY_MODE_NORMAL
+	playmoncry SPECIES_RAIKOU, CRY_MODE_NORMAL
 	waitmoncry
+	msgbox Ho_Oh_Legendaries_Text, MSGBOX_NPC
+	closemessage
 	return
 
 NavelRock_Top_EventScript_DefeatedHoOh::
+	setweather WEATHER_NONE
+	doweather
 	setflag FLAG_DEFEATED_HO_OH
-	call_if_set FLAG_EXTRA_LEGENDARIES, NavelRock_Top_Enable_Kanto_Legendaries
+	call_if_set FLAG_EXTRA_LEGENDARIES, NavelRock_Top_Enable_Johto_Legendaries
 	setvar VAR_0x8004, SPECIES_HO_OH
 	goto Common_EventScript_LegendaryFlewAway
 	end
 
 NavelRock_Top_EventScript_RanFromHoOh::
+	setweather WEATHER_NONE
+	doweather
 	setvar VAR_0x8004, SPECIES_HO_OH
 	goto Common_EventScript_LegendaryFlewAway
 	end
@@ -127,3 +147,10 @@ NavelRock_Top_Movement_HoOhAppear:
 	walk_in_place_down
 	walk_in_place_down
 	step_end
+
+Ho_Oh_Text:
+	.string "Gyyaaao!$"
+
+Ho_Oh_Legendaries_Text:
+	.string "Three unknown roars echoed\n"
+	.string "through NAVEL ROCK.$"

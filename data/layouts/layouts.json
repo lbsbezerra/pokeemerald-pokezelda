@@ -35,7 +35,7 @@
       "id": "LAYOUT_RUSTBORO_CITY",
       "name": "RustboroCity_Layout",
       "width": 46,
-      "height": 60,
+      "height": 64,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro_ClockTown",
       "border_filepath": "data/layouts/RustboroCity/border.bin",
@@ -305,7 +305,7 @@
       "id": "LAYOUT_ROUTE115",
       "name": "Route115_Layout",
       "width": 40,
-      "height": 80,
+      "height": 84,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fallarbor",
       "border_filepath": "data/layouts/Route115/border.bin",
@@ -620,6 +620,16 @@
       "secondary_tileset": "gTileset_PokemonCenter",
       "border_filepath": "data/layouts/PokemonCenter_2F/border.bin",
       "blockdata_filepath": "data/layouts/PokemonCenter_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_POKEMON_CENTER_3F",
+      "name": "PokemonCenter_3F_Layout",
+      "width": 11,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/PokemonCenter_3F/border.bin",
+      "blockdata_filepath": "data/layouts/PokemonCenter_3F/map.bin"
     },
     {
       "id": "LAYOUT_MART",
@@ -4590,6 +4600,46 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/ScorchedSlab_Modern/border.bin",
       "blockdata_filepath": "data/layouts/ScorchedSlab_Modern/map.bin"
+    },
+    {
+      "id": "LAYOUT_NAVEL_ROCK_FORK_OPEN",
+      "name": "NavelRock_Fork_Open_Layout",
+      "width": 40,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/NavelRock_Fork_Open/border.bin",
+      "blockdata_filepath": "data/layouts/NavelRock_Fork_Open/map.bin"
+    },
+    {
+      "id": "LAYOUT_NAVEL_ROCK_UNOWN_CHAMBER",
+      "name": "NavelRock_UnownChamber_Layout",
+      "width": 25,
+      "height": 21,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/NavelRock_UnownChamber/border.bin",
+      "blockdata_filepath": "data/layouts/NavelRock_UnownChamber/map.bin"
+    },
+    {
+      "id": "LAYOUT_NAVEL_ROCK_UNOWN_ROOM_1",
+      "name": "NavelRock_Unown_Room_1_Layout",
+      "width": 3,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/NavelRock_Unown_Room_1/border.bin",
+      "blockdata_filepath": "data/layouts/NavelRock_Unown_Room_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_NAVEL_ROCK_UNOWN_ROOM_2",
+      "name": "NavelRock_Unown_Room_2_Layout",
+      "width": 1,
+      "height": 1,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/NavelRock_Unown_Room_2/border.bin",
+      "blockdata_filepath": "data/layouts/NavelRock_Unown_Room_2/map.bin"
     }
   ]
 }

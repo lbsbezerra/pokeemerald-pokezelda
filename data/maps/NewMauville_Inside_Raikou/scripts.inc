@@ -2,6 +2,8 @@
 .set LOCALID_RAIKOU_2, 2
 
 NewMauville_Inside_Raikou_MapScripts::
+	map_script MAP_SCRIPT_ON_RESUME, EncounterTable
+	map_script MAP_SCRIPT_ON_TRANSITION, EncounterTable
 	.byte 0
 
 @@Trigger at the start
@@ -20,10 +22,8 @@ NewMauville_Inside_Raikou_EntranceTrigger::
 	end
 
 NewMauville_Inside_Raikou_EntranceTrigger_Text:
-	.string "A big roar echoes around NEW\n"
-	.string "MAUVILLE.\p"
-	.string "Is there something hiding in\n"
-	.string "this place?$"
+	.string "A thunderous roar rumbles through\n"
+	.string "the halls of NEW MAUVILLE.$"
 
 NewMauville_Inside_Raikou_EntranceTrigger_Movement:
 	delay_16
@@ -39,6 +39,8 @@ NewMauville_Inside_Raikou_RaikouBattle_1::
 	playmoncry SPECIES_RAIKOU, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
+	msgbox NewMauville_Inside_Raikou_RaikouBattle_CantCatch_Text, MSGBOX_DEFAULT
+	closemessage
 	setwildbattle SPECIES_RAIKOU, 70
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	setflag FLAG_SYS_NO_CATCHING
@@ -79,8 +81,13 @@ NewMauville_Inside_Raikou_RaikouBattle_1_Movement:
 	walk_fast_down
 	step_end
 
+NewMauville_Inside_Raikou_RaikouBattle_CantCatch_Text:
+	.string "RAIKOU's power is surging wildly!\p"
+	.string "Its power prevents the use of\n"
+	.string "POKéBALLS.$"
+
 NewMauville_Inside_Raikou_RaikouBattle_1_Text:
-	.string "It ran away faster than light!$"
+	.string "RAIKOU ran away swiftly!$"
 
 @@Second encounter with Raikou. Level 70, 400 speed, 300hp
 
@@ -131,7 +138,7 @@ NewMauville_Inside_Raikou_RaikouBattle_2_Movement:
 	step_end
 
 NewMauville_Inside_Raikou_RaikouBattle_2_Text:
-	.string "It ran away even faster than before!$"
+	.string "RAIKOU swiftly escaped again!$"
 
 @@ Final battle with Raikou, has 600hp and 400 speed, with magnet
 NewMauville_Inside_Raikou_RaikouBattle::
@@ -166,8 +173,8 @@ NewMauville_Inside_Raikou_RaikouBattle_3_Stats::
 	return
 
 NewMauville_Inside_Raikou_RaikouBattle_Text::
-	.string "RAIKOU stopped running away.\n"
-	.string "Can it be captured now?$"
+	.string "RAIKOU stopped running away.\p"
+	.string "POKéBALLS seem to work again.$"
 
 NewMauville_Inside_Raikou_Won::
 	setflag FLAG_DEFEATED_RAIKOU

@@ -4,11 +4,11 @@
 
 ShoalCave_LowTideIceRoom_Suicune_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, ShoalCave_LowTideIceRoom_Suicune_OnTransition
-	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
+	map_script MAP_SCRIPT_ON_RESUME, EncounterTable
 	.byte 0
 
 ShoalCave_LowTideIceRoom_Suicune_OnTransition::
-	callnative SetTimeBasedEncounters
+	callnative ChangeEncounterTable
 	end
 
 @@Trigger at the start
@@ -27,9 +27,8 @@ ShoalCave_LowTideIceRoom_Suicune_EntranceTrigger::
 	end
 
 ShoalCave_LowTideIceRoom_Suicune_EntranceTrigger_Text:
-	.string "A chilling roar echoes around\n"
-	.string "SHOAL CAVE.\p"
-	.string "There's something or someone here.$"
+	.string "A chilling roar reverberates\n"
+	.string "through SHOAL CAVE’s depths.$"
 
 ShoalCave_LowTideIceRoom_Suicune_EntranceTriggerMovement:
 	face_right
@@ -46,6 +45,8 @@ ShoalCave_LowTideIceRoom_Suicune_SuicuneBattle1::
 	playmoncry SPECIES_SUICUNE, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
+	msgbox ShoalCave_LowTideIceRoom_Suicune_SuicuneBattle_CantCatch_Text, MSGBOX_DEFAULT
+	closemessage
 	setwildbattle SPECIES_SUICUNE, 90
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	setflag FLAG_SYS_NO_CATCHING
@@ -92,8 +93,13 @@ ShoalCave_LowTideIceRoom_Suicune_SuicuneBattle1_Movement:
 	walk_fast_down
 	step_end
 
+ShoalCave_LowTideIceRoom_Suicune_SuicuneBattle_CantCatch_Text:
+	.string "SUICUNE radiates an overwhelming aura!\p"
+	.string "Its power prevents the use of\n"
+	.string "POKéBALLS.$"
+
 ShoalCave_LowTideIceRoom_Suicune_SuicuneBattle1_Text:
-	.string "The POKéMON swiftly ran away!$"
+	.string "SUICUNE swiftly ran away!$"
 
 @@Second encounter with Suicune. Level 80. High defenses
 
@@ -152,7 +158,7 @@ ShoalCave_LowTideIceRoom_Suicune_SuicuneBattle2_Movement:
 	step_end
 
 ShoalCave_LowTideIceRoom_Suicune_SuicuneBattle2_Text:
-	.string "It swiftly ran away again!$"
+	.string "SUICUNE swiftly ran away again!$"
 
 @@Final battle with Suicune, now you can catch it. Level 70, holds Mystic water, and has high defenses
 
@@ -188,9 +194,8 @@ ShoalCave_LowTideIceRoom_Suicune_SuicuneBattle3_Stats::
 	return
 
 ShoalCave_LowTideIceRoom_Suicune_SuicuneFinalBattle_Text:
-	.string "SUICUNE doesn't have anywhere\n"
-	.string "else to hide.\p"
-	.string "Can it be captured now?$"
+	.string "SUICUNE has nowhere left to run.\p"
+	.string "POKéBALLS seem to work again.$"
 
 ShoalCave_LowTideIceRoom_Suicune_SuicuneFinalBattle_Won::
 	setflag FLAG_DEFEATED_SUICUNE

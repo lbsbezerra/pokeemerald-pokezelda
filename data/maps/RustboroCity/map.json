@@ -58,7 +58,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
-      "x": 24,
+      "x": 25,
       "y": 37,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -227,8 +227,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_1",
-      "x": 32,
-      "y": 34,
+      "x": 31,
+      "y": 36,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -570,34 +570,6 @@
       "elevation": 0,
       "dest_map": "MAP_RUSTBORO_CITY_HOUSE3",
       "dest_warp_id": "0"
-    },
-    {
-      "x": 15,
-      "y": 59,
-      "elevation": 0,
-      "dest_map": "MAP_ROUTE104",
-      "dest_warp_id": "8"
-    },
-    {
-      "x": 16,
-      "y": 59,
-      "elevation": 0,
-      "dest_map": "MAP_ROUTE104",
-      "dest_warp_id": "9"
-    },
-    {
-      "x": 20,
-      "y": 0,
-      "elevation": 0,
-      "dest_map": "MAP_ROUTE104",
-      "dest_warp_id": "8"
-    },
-    {
-      "x": 21,
-      "y": 0,
-      "elevation": 0,
-      "dest_map": "MAP_ROUTE104",
-      "dest_warp_id": "9"
     }
   ],
   "coord_events": [
@@ -794,7 +766,7 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 24,
+      "x": 23,
       "y": 19,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -802,7 +774,7 @@
     },
     {
       "type": "sign",
-      "x": 24,
+      "x": 25,
       "y": 35,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -851,7 +823,7 @@
     {
       "type": "sign",
       "x": 17,
-      "y": 19,
+      "y": 20,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "RustboroCity_EventScript_DevonCorpSign"
