@@ -2545,8 +2545,9 @@ void DisplayPartyMenuStdMessage(u32 stringId)
                 stringId = PARTY_MSG_CHOOSE_MON_OR_CANCEL;
         }
         DrawStdFrameWithCustomTileAndPalette(*windowPtr, FALSE, 0x4F, 13);
+        FillWindowPixelBuffer(*windowPtr, PIXEL_FILL(15)); // Adding dark mode background for the textbox message
         StringExpandPlaceholders(gStringVar4, sActionStringTable[stringId]);
-        AddTextPrinterParameterized(*windowPtr, FONT_NORMAL, gStringVar4, 0, 1, 0, 0);
+        AddTextPrinterParameterized2(*windowPtr, FONT_NORMAL, gStringVar4, 0, NULL, 3, 15, 15);
         ScheduleBgCopyTilemapToVram(2);
     }
 }
