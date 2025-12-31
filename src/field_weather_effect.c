@@ -32,6 +32,13 @@ const u8 gWeatherRainTiles[] = INCBIN_U8("graphics/weather/rain.4bpp");
 const u8 gWeatherSandstormTiles[] = INCBIN_U8("graphics/weather/sandstorm.4bpp");
 const u8 gWeatherPinkLeafTiles[] = INCBIN_U8("graphics/weather/pink_leaves.4bpp");
 const u16 gPinkLeavesWeatherPalette[] = INCBIN_U16("graphics/weather/pink_leaves.gbapal");
+const u16 gPinkLeavesNightPalette[16] = {
+    0, 0, 0, 0, 0, 0, 0, 0,             // Indices 0-7: Empty
+    RGB(20, 31, 25),                    // Index 8: Brighter (Minty White/Glow)
+    RGB(10, 25, 15),                    // Index 9: Medium (Emerald Green)
+    RGB(0, 15, 5),                      // Index 10: Darker (Deep Forest Green)
+    0, 0, 0, 0, 0                       // Indices 11-15: Empty
+};
 
 const struct SpritePalette sPinkLeavesSpritePalette = {gPinkLeavesWeatherPalette, GFXTAG_PINK_LEAVES};
 
@@ -2692,23 +2699,49 @@ void PinkLeaves_InitVars(void)
     gWeatherPtr->weatherGfxLoaded = FALSE;
     gWeatherPtr->targetColorMapIndex = 0;
     gWeatherPtr->colorMapStepDelay = 20;
-    gWeatherPtr->targetPinkLeafSpriteCount = 9; // Can replace to NUM_ASH_SPRITES for more if needed
+    gWeatherPtr->targetPinkLeafSpriteCount = NUM_ASH_SPRITES; // Can replace to NUM_ASH_SPRITES for more if needed
     gWeatherPtr->pinkLeafVisibleCounter = 0;
     // This preserves shadow darkness correctly as seen in Rain and Snow
     Weather_SetBlendCoeffs(8, 12);
     gWeatherPtr->noShadows = FALSE;
+
+    // BLDALPHA_BLEND(FirstTarget, SecondTarget)
+    // Values go from 0 to 16.
+    // 16, 4 means: "Make the leaf 100% bright and the background only 25% visible behind it."
+  // (16, 5) is a "Strong Glow"
+    // 16 = The Sprite (Leaves) are at 100% opacity.
+    // 5 = The Background is at roughly 30% opacity behind them.
+    SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND(16, 12));
+
+    // This ensures the hardware target is set to Sprites (OBJ) 
+    // and all Background layers (BG0-BG3)
+    SetGpuReg(REG_OFFSET_BLDCNT, BLDCNT_TGT1_OBJ | 
+                                 BLDCNT_TGT2_BG0 | 
+                                 BLDCNT_TGT2_BG1 | 
+                                 BLDCNT_TGT2_BG2 | 
+                                 BLDCNT_TGT2_BG3 | 
+                                 BLDCNT_EFFECT_BLEND);
 }
 
 void PinkLeaves_InitAll(void)
 {
     u16 i;
+    // We don't need 'extern' anymore because include/overworld.h (already at the top) handles it!
+    u8 timeOfDay = gTimeOfDay; 
 
     PinkLeaves_InitVars();
     LoadSpriteSheet(&sPinkLeavesSpriteSheet);
 
-    // FIX: This links the pink colors to the Tag (GFXTAG_PINK_LEAVES)
-    // and registers it in the sprite system so the leaves aren't black.
-    LoadSpritePalette(&sPinkLeavesSpritePalette);
+    // If the variable matches the 'NIGHT' label (0), load the night colors
+    if (timeOfDay == TIME_OF_DAY_NIGHT)
+    {
+        struct SpritePalette nightPalette = {gPinkLeavesNightPalette, GFXTAG_PINK_LEAVES};
+        LoadSpritePalette(&nightPalette);
+    }
+    else
+    {
+        LoadSpritePalette(&sPinkLeavesSpritePalette);
+    }
 
     DebugPrintf("Init Pink Leaves");
 
@@ -2771,7 +2804,7 @@ static const struct OamData sPinkLeafSpriteOamData =
 {
     .y = 0,
     .affineMode = ST_OAM_AFFINE_OFF,
-    .objMode = ST_OAM_OBJ_NORMAL,
+    .objMode = ST_OAM_OBJ_BLEND, //changed from ST_OAM_OBJ_NORMAL
     .mosaic = FALSE,
     .bpp = ST_OAM_4BPP,
     .shape = SPRITE_SHAPE(16x16),
