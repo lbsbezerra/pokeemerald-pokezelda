@@ -2699,7 +2699,7 @@ void PinkLeaves_InitVars(void)
     gWeatherPtr->weatherGfxLoaded = FALSE;
     gWeatherPtr->targetColorMapIndex = 0;
     gWeatherPtr->colorMapStepDelay = 20;
-    gWeatherPtr->targetPinkLeafSpriteCount = NUM_ASH_SPRITES; // Can replace to NUM_ASH_SPRITES for more if needed
+    gWeatherPtr->targetPinkLeafSpriteCount = 12; // Can replace to NUM_ASH_SPRITES, 8, 9, etc. for more if needed
     gWeatherPtr->pinkLeafVisibleCounter = 0;
     // This preserves shadow darkness correctly as seen in Rain and Snow
     Weather_SetBlendCoeffs(8, 12);
