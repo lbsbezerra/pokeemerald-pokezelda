@@ -188,6 +188,7 @@ static const u8 sPCIconOff_Gfx[] = INCBIN_U8("graphics/naming_screen/pc_icon_off
 static const u8 sPCIconOn_Gfx[] = INCBIN_U8("graphics/naming_screen/pc_icon_on.4bpp");
 static const u16 sKeyboard_Pal[] = INCBIN_U16("graphics/naming_screen/keyboard.gbapal");
 static const u16 sRival_Pal[] = INCBIN_U16("graphics/naming_screen/rival.gbapal"); // Unused, leftover from FRLG rival
+static const u8 sSheikahTextColors[] = {12, 3, 12}; //Used for the "Your Name" and "Pokemon Nickname" dark mode UI textbox
 
 static const u8 *const sTransferredToPCMessages[] =
 {
@@ -1728,8 +1729,9 @@ static void HandleDpadMovement(struct Task *task)
 
 static void DrawNormalTextEntryBox(void)
 {
-    FillWindowPixelBuffer(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX], PIXEL_FILL(1));
-    AddTextPrinterParameterized(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX], FONT_NORMAL, sNamingScreen->template->title, 8, 1, 0, 0);
+    FillWindowPixelBuffer(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX], PIXEL_FILL(12));
+    // We use Parameterized3 to pass the sSheikahTextColors array
+    AddTextPrinterParameterized3(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX], FONT_NORMAL, 8, 1, sSheikahTextColors, 0, sNamingScreen->template->title);
     PutWindowTilemap(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX]);
 }
 
@@ -1739,8 +1741,8 @@ static void DrawMonTextEntryBox(void)
 
     StringCopy(buffer, gSpeciesNames[sNamingScreen->monSpecies]);
     StringAppendN(buffer, sNamingScreen->template->title, 15);
-    FillWindowPixelBuffer(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX], PIXEL_FILL(1));
-    AddTextPrinterParameterized(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX], FONT_NORMAL, buffer, 8, 1, 0, 0);
+    FillWindowPixelBuffer(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX], PIXEL_FILL(12));
+    AddTextPrinterParameterized3(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX], FONT_NORMAL, 8, 1, sSheikahTextColors, 0, sNamingScreen->template->title);
     PutWindowTilemap(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX]);
 }
 
@@ -1929,7 +1931,7 @@ static void DrawTextEntry(void)
     u8 maxChars = sNamingScreen->template->maxChars;
     u16 x = sNamingScreen->inputCharBaseXPos - 0x40;
 
-    FillWindowPixelBuffer(sNamingScreen->windows[WIN_TEXT_ENTRY], PIXEL_FILL(1));
+    FillWindowPixelBuffer(sNamingScreen->windows[WIN_TEXT_ENTRY], PIXEL_FILL(12));
 
     for (i = 0; i < maxChars; i++)
     {
@@ -1937,7 +1939,7 @@ static void DrawTextEntry(void)
         temp[1] = gText_ExpandedPlaceholder_Empty[0];
         extraWidth = (IsWideLetter(temp[0]) == TRUE) ? 2 : 0;
 
-        AddTextPrinterParameterized(sNamingScreen->windows[WIN_TEXT_ENTRY], FONT_NORMAL, temp, i * 8 + x + extraWidth, 1, TEXT_SKIP_DRAW, NULL);
+        AddTextPrinterParameterized3(sNamingScreen->windows[WIN_TEXT_ENTRY], FONT_NORMAL, i * 8 + x + extraWidth, 1, sSheikahTextColors, TEXT_SKIP_DRAW, temp);
     }
 
     TryDrawGenderIcon();
