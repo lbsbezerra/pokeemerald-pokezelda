@@ -1955,17 +1955,23 @@ struct TextColor   // Needed because of alignment
 static const struct TextColor sTextColorStruct =
 {
     {
-        {TEXT_DYNAMIC_COLOR_4, TEXT_COLOR_WHITE, TEXT_COLOR_DARK_GRAY},
-        {TEXT_DYNAMIC_COLOR_5, TEXT_COLOR_WHITE, TEXT_COLOR_DARK_GRAY},
-        {TEXT_DYNAMIC_COLOR_6, TEXT_COLOR_WHITE, TEXT_COLOR_DARK_GRAY}
+        // colors[0] is for UPPER CASE
+        // Index 12 = Black, Index 3 = Off-white, Index 12 = Hidden Shadow
+        {12, 3, 12}, 
+
+        // colors[1] is for lower case
+        {12, 3, 12}, 
+
+        // colors[2] is for Symbols
+        {12, 3, 12}
     }
 };
 
 static const u8 sFillValues[KBPAGE_COUNT] =
 {
-    [KEYBOARD_LETTERS_LOWER] = PIXEL_FILL(14),
-    [KEYBOARD_LETTERS_UPPER] = PIXEL_FILL(13),
-    [KEYBOARD_SYMBOLS]       = PIXEL_FILL(15)
+    [KEYBOARD_LETTERS_LOWER] = PIXEL_FILL(12),
+    [KEYBOARD_LETTERS_UPPER] = PIXEL_FILL(12),
+    [KEYBOARD_SYMBOLS]       = PIXEL_FILL(12)
 };
 
 static const u8 *const sKeyboardTextColors[KBPAGE_COUNT] =
@@ -2025,9 +2031,9 @@ static void DrawKeyboardPageOnDeck(void)
 
 static void PrintControls(void)
 {
-    const u8 color[3] = { TEXT_DYNAMIC_COLOR_6, TEXT_COLOR_WHITE, TEXT_COLOR_DARK_GRAY };
+    const u8 color[3] = { 0, 3, 0 };
 
-    FillWindowPixelBuffer(sNamingScreen->windows[WIN_BANNER], PIXEL_FILL(15));
+    FillWindowPixelBuffer(sNamingScreen->windows[WIN_BANNER], PIXEL_FILL(13));
     AddTextPrinterParameterized3(sNamingScreen->windows[WIN_BANNER], FONT_SMALL, 2, 1, color, 0, gText_MoveOkBack);
     PutWindowTilemap(sNamingScreen->windows[WIN_BANNER]);
     CopyWindowToVram(sNamingScreen->windows[WIN_BANNER], COPYWIN_FULL);
