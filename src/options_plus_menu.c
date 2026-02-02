@@ -96,7 +96,7 @@ static const struct WindowTemplate sOptionMenuWinTemplates[] =
         .tilemapTop = 0,
         .width = 30,
         .height = 2,
-        .paletteNum = 0,
+        .paletteNum = 1,
         .baseBlock = 2
     },
     {//WIN_OPTIONS
@@ -231,7 +231,7 @@ EWRAM_DATA static struct OptionMenu *sOptions = NULL;
 
 // const data
 static const u8 sEqualSignGfx[] = INCBIN_U8("graphics/interface/option_menu_equals_sign.4bpp"); // note: this is only used in the Japanese release
-static const u16 sOptionMenuBg_Pal[] = {RGB(17, 18, 31)};
+static const u16 sOptionMenuBg_Pal[] = {RGB(0, 2, 5)};
 static const u16 sOptionMenuText_Pal[] = INCBIN_U16("graphics/interface/option_menu_text_custom.gbapal");
 
 #define TEXT_COLOR_OPTIONS_WHITE                1
@@ -668,16 +668,19 @@ static const u8 sText_TopBar_Main_Right[]   = _("{R_BUTTON}");
 static const u8 sText_TopBar_Custom[]       = _("BATTLE OPTIONS");
 static const u8 sText_TopBar_Custom_Left[]  = _("{L_BUTTON}");
 static const u8 sText_TopBar_Sound[]        = _("SOUND OPTIONS");
+
 static void DrawTopBarText(void)
 {
-    const u8 color[3] = { TEXT_DYNAMIC_COLOR_6, TEXT_COLOR_WHITE, TEXT_COLOR_OPTIONS_GRAY_FG };
+    const u8 color[3] = { TEXT_DYNAMIC_COLOR_6, TEXT_COLOR_OPTIONS_GRAY_FG, TEXT_COLOR_TRANSPARENT };
+    // Not working... Color for [L] and [R] buttons (Change TEXT_COLOR_WHITE to your preferred gray)
+    const u8 colorButtons[3] = { TEXT_DYNAMIC_COLOR_6, 3, TEXT_COLOR_TRANSPARENT };
 
     FillWindowPixelBuffer(WIN_TOPBAR, PIXEL_FILL(15));
     switch (sOptions->submenu)
     {
         case MENU_MAIN:
             AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 94, 1, color, 0, sText_TopBar_Main);
-            AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 222, 1, color, 0, sText_TopBar_Main_Right);
+            AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 222, 1, colorButtons, 0, sText_TopBar_Main_Right);
             break;
         case MENU_CUSTOM:
             AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 94, 1, color, 0, sText_TopBar_Custom);
