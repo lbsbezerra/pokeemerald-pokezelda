@@ -145,7 +145,7 @@ static const struct BgTemplate sOptionMenuBgTemplates[] =
     }
 };
 
-static const u16 sOptionMenuBg_Pal[] = {RGB(17, 18, 31)};
+static const u16 sOptionMenuBg_Pal[] = {RGB(0, 2, 5)};
 
 static void MainCB2(void)
 {
@@ -682,7 +682,7 @@ static void ButtonMode_DrawChoices(u8 selection)
 
 static void DrawHeaderText(void)
 {
-    FillWindowPixelBuffer(WIN_HEADER, PIXEL_FILL(1));
+    FillWindowPixelBuffer(WIN_HEADER, PIXEL_FILL(15));
     AddTextPrinterParameterized(WIN_HEADER, FONT_SHORT, gText_Option, 8, 1, TEXT_SKIP_DRAW, NULL);
     CopyWindowToVram(WIN_HEADER, COPYWIN_FULL);
 }
@@ -691,7 +691,7 @@ static void DrawOptionMenuTexts(void)
 {
     u8 i;
 
-    FillWindowPixelBuffer(WIN_OPTIONS, PIXEL_FILL(1));
+    FillWindowPixelBuffer(WIN_OPTIONS, PIXEL_FILL(15));
     for (i = 0; i < MENUITEM_COUNT; i++)
         AddTextPrinterParameterized(WIN_OPTIONS, FONT_SHORT, sOptionMenuItemsNames[i], 8, (i * 13) + 1, TEXT_SKIP_DRAW, NULL);
     CopyWindowToVram(WIN_OPTIONS, COPYWIN_FULL);
