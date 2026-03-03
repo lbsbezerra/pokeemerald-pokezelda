@@ -236,6 +236,25 @@ static s8 CompareItemsAlphabetically(struct ItemSlot* itemSlot1, struct ItemSlot
 static s8 CompareItemsByMost(struct ItemSlot* itemSlot1, struct ItemSlot* itemSlot2);
 static s8 CompareItemsByType(struct ItemSlot* itemSlot1, struct ItemSlot* itemSlot2);
 
+static const u16 sDarkModeMenuPalette[] = {
+    RGB(0, 0, 0),        // Index 0: Transparent
+    RGB(1, 1, 1),        // Index 1: The Dark Background
+    RGB(25, 25, 25),     // Index 2: Pure White Text
+    RGB(1, 1, 1),     // Index 3: Text Shadow
+    RGB(15, 15, 15),     // Index 4: Placeholder/Misc
+    RGB(15, 15, 15),     // Index 5: Placeholder/Misc
+    RGB(15, 15, 15),     // Index 6: Placeholder/Misc
+    RGB(15, 15, 15),     // Index 7: Placeholder/Misc
+    RGB(15, 15, 15),     // Index 8: Placeholder/Misc
+    RGB(15, 15, 15),     // Index 9: Placeholder/Misc
+    RGB(15, 15, 15),     // Index 10: Placeholder/Misc
+    RGB(15, 15, 15),     // Index 11: Placeholder/Misc
+    RGB(15, 15, 15),     // Index 12: Placeholder/Misc
+    RGB(15, 15, 15),     // Index 13: Placeholder/Misc
+    RGB(15, 15, 15),     // Index 14: Placeholder/Misc
+    RGB(15, 15, 15),     // Index 15: Placeholder/Misc
+};
+
 static const struct BgTemplate sBgTemplates_ItemMenu[] =
 {
     {
@@ -2614,10 +2633,17 @@ static void LoadBagMenuTextWindows(void)
 
     InitWindows(sDefaultBagWindows);
     DeactivateAllTextPrinters();
+    
+    // Keep your original border and message box settings
     LoadUserWindowBorderGfx(0, 1, BG_PLTT_ID(14));
     LoadMessageBoxGfx(0, 10, BG_PLTT_ID(13));
+    
+    // List menu text colors
     ListMenuLoadStdPalAt(BG_PLTT_ID(12), 1);
-    LoadPalette(&gStandardMenuPalette, BG_PLTT_ID(15), PLTT_SIZE_4BPP);
+    
+    // Load your new Dark Mode palette into slot 15
+    LoadPalette(sDarkModeMenuPalette, BG_PLTT_ID(15), PLTT_SIZE_4BPP);
+
     for (i = 0; i <= WIN_POCKET_NAME; i++)
     {
         FillWindowPixelBuffer(i, PIXEL_FILL(0));
