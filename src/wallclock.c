@@ -88,7 +88,7 @@ static const struct WindowTemplate sWindowTemplates[] =
         .tilemapTop = 16,
         .width = 6,
         .height = 2,
-        .paletteNum = 12,
+        .paletteNum = 15,
         .baseBlock = 560
     },
     DUMMY_WIN_TEMPLATE
