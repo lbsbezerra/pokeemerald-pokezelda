@@ -618,8 +618,8 @@ PetalburgWoods_Text_YouHaveToHelpMe:
 PetalburgWoods_Text_NoOneCrossesTeamAqua:
 	.string "Hunh? What do you think you're doing?\n"
 	.string "What, you're going to protect him?\p"
-	.string "No one who crosses TEAM AQUA\n"
-	.string "gets any mercy, not even a kid!\p"
+	.string "No one who crosses the SOOGA CLAN\n"
+	.string "gets any mercy, not even a Minish!\p"
 	.string "Come on and battle me!$"
 
 PetalburgWoods_Text_YoureKiddingMe:
