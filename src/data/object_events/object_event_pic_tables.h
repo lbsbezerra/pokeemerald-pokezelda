@@ -683,15 +683,15 @@ static const struct SpriteFrameImage sPicTable_TuberF[] = {
 };
 
 static const struct SpriteFrameImage sPicTable_TuberM[] = {
-    overworld_frame(gObjectEventPic_TuberM, 2, 2, 0),
-    overworld_frame(gObjectEventPic_TuberM, 2, 2, 1),
-    overworld_frame(gObjectEventPic_TuberM, 2, 2, 2),
-    overworld_frame(gObjectEventPic_TuberM, 2, 2, 3),
-    overworld_frame(gObjectEventPic_TuberM, 2, 2, 4),
-    overworld_frame(gObjectEventPic_TuberM, 2, 2, 5),
-    overworld_frame(gObjectEventPic_TuberM, 2, 2, 6),
-    overworld_frame(gObjectEventPic_TuberM, 2, 2, 7),
-    overworld_frame(gObjectEventPic_TuberM, 2, 2, 8),
+    overworld_frame(gObjectEventPic_TuberM, 4, 4, 0),
+    overworld_frame(gObjectEventPic_TuberM, 4, 4, 1),
+    overworld_frame(gObjectEventPic_TuberM, 4, 4, 2),
+    overworld_frame(gObjectEventPic_TuberM, 4, 4, 3),
+    overworld_frame(gObjectEventPic_TuberM, 4, 4, 4),
+    overworld_frame(gObjectEventPic_TuberM, 4, 4, 5),
+    overworld_frame(gObjectEventPic_TuberM, 4, 4, 6),
+    overworld_frame(gObjectEventPic_TuberM, 4, 4, 7),
+    overworld_frame(gObjectEventPic_TuberM, 4, 4, 8),
 };
 
 static const struct SpriteFrameImage sPicTable_Hiker[] = {
