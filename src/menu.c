@@ -2120,7 +2120,7 @@ void BufferSaveMenuText(u8 textId, u8 *dest, u8 color)
     *(string++) = color;
     *(string++) = EXT_CTRL_CODE_BEGIN;
     *(string++) = EXT_CTRL_CODE_SHADOW;
-    *(string++) = color + 1;
+    *(string++) = 0;
 
     switch (textId)
     {
