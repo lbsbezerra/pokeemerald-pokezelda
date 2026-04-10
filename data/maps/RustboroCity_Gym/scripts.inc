@@ -122,13 +122,13 @@ RustboroCity_Gym_Text_GymGuideAdvice:
 	.string "But GYM LEADERS aren't pushovers!\p"
 	.string "And that's where I come in!\n"
 	.string "I'm here to provide expert advice!\p"
-	.string "SKULL KID, the SHRINE LEADER, is a user\n"
+	.string "SKULL KID, the SHRINE SAGE, is a user\n"
 	.string "of ROCK-type POKéMON.\p"
 	.string "The ROCK type is very durable, but\n"
 	.string "it can't stand WATER-type and\l"
 	.string "GRASS-type moves.\p"
 	.string "Come see me afterwards, if you beat\n"
-	.string "the SHRINE LEADER.\p"
+	.string "the SHRINE SAGE.\p"
 	.string "Well, go for it!$"
 
 RustboroCity_Gym_Text_GymGuidePostVictory:
@@ -183,10 +183,10 @@ RustboroCity_Gym_Text_MarcPostBattle:
 
 RustboroCity_Gym_Text_RoxanneIntro:
 	.string "Hello, I am SKULL KID, the RUST CLOCK\n"
-	.string "TOWN SHRINE LEADER.\p"
-	.string "I became a SHRINE LEADER so that I might\n"
-	.string "apply what I learned at the POKéMON\l"
-	.string "TRAINER'S SCHOOL in battle.\p"
+	.string "TOWN SHRINE SAGE.\p"
+	.string "You've met with a terrible fate, \n"
+	.string "haven't you?\l"
+	.string "Well...\p"
 	.string "Would you kindly demonstrate how you\n"
 	.string "battle, and with which POKéMON?$"
 
@@ -265,12 +265,12 @@ RustboroCity_Gym_Text_RoxanneRegisterCall:
 	.string "… … … … … Click!$"
 
 RustboroCity_Gym_Text_RegisteredRoxanne:
-	.string "Registered SHRINE LEADER SKULL KID\n"
+	.string "Registered SHRINE SAGE SKULL KID\n"
 	.string "in the POKéNAV.$"
 
 RustboroCity_Gym_Text_RoxannePreRematch:
 	.string "SKULL KID: I'm so glad to see you again.\n"
-	.string "I'm SKULL KID, the SHRINE LEADER here.\p"
+	.string "I'm SKULL KID, the SHRINE SAGE here.\p"
 	.string "I'm sure we've both experienced many\n"
 	.string "battles since we last met.\p"
 	.string "I would like to see how much better\n"
@@ -288,7 +288,7 @@ RustboroCity_Gym_Text_RoxannePostRematch:
 
 RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons:
 	.string "SKULL KID: I'm so glad to see you again.\n"
-	.string "I'm SKULL KID, the SHRINE LEADER here.\p"
+	.string "I'm SKULL KID, the SHRINE SAGE here.\p"
 	.string "I'm sure we've both experienced many\n"
 	.string "battles since we last met.\p"
 	.string "I would like to see how much better\n"
