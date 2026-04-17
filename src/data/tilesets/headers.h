@@ -83,6 +83,19 @@ const struct Tileset gTileset_Slateport =
     .callback = InitTilesetAnim_Slateport,
 };
 
+// Working with new secondary tileset for WindPort.
+const struct Tileset gTileset_Slateport_WindPort =
+{
+    .isCompressed = TRUE,
+    //.swapPalettes = SWAP_PAL(6),
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Slateport_WindPort,
+    .palettes = gTilesetPalettes_Slateport_WindPort,
+    .metatiles = gMetatiles_Slateport_WindPort,
+    .metatileAttributes = gMetatileAttributes_Slateport_WindPort,
+    .callback = InitTilesetAnim_Slateport,
+};
+
 const struct Tileset gTileset_Mauville =
 {
     .isCompressed = TRUE,

@@ -17,7 +17,7 @@
       "width": 40,
       "height": 60,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Slateport",
+      "secondary_tileset": "gTileset_Slateport_WindPort",
       "border_filepath": "data/layouts/SlateportCity/border.bin",
       "blockdata_filepath": "data/layouts/SlateportCity/map.bin"
     },

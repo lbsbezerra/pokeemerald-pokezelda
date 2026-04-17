@@ -29,6 +29,7 @@ static void TilesetAnim_Rustboro(u16);
 static void TilesetAnim_Rustboro_ClockTown(u16);
 static void TilesetAnim_Dewford(u16);
 static void TilesetAnim_Slateport(u16);
+static void TilesetAnim_Slateport_WindPort(u16);
 static void TilesetAnim_Mauville(u16);
 static void TilesetAnim_Lavaridge(u16);
 static void TilesetAnim_EverGrande(u16);
@@ -710,6 +711,13 @@ void InitTilesetAnim_Slateport(void)
     sSecondaryTilesetAnimCallback = TilesetAnim_Slateport;
 }
 
+void InitTilesetAnim_Slateport_WindPort(void)
+{
+    sSecondaryTilesetAnimCounter = 0;
+    sSecondaryTilesetAnimCounterMax = sPrimaryTilesetAnimCounterMax;
+    sSecondaryTilesetAnimCallback = TilesetAnim_Slateport_WindPort;
+}
+
 void InitTilesetAnim_Mauville(void)
 {
     sSecondaryTilesetAnimCounter = sPrimaryTilesetAnimCounter;
@@ -899,6 +907,12 @@ static void TilesetAnim_Slateport(u16 timer)
 {
     if (timer % 16 == 0)
         QueueAnimTiles_Slateport_Balloons(timer / 16);
+}
+
+static void TilesetAnim_Slateport_WindPort(u16 timer)
+{
+    /*if (timer % 16 == 0)
+        QueueAnimTiles_Slateport_Balloons(timer / 16);*/
 }
 
 static void TilesetAnim_Mauville(u16 timer)

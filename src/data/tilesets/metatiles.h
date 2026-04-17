@@ -16,6 +16,9 @@ const u16 gMetatileAttributes_Dewford[] = INCBIN_U16("data/tilesets/secondary/de
 const u16 gMetatiles_Slateport[] = INCBIN_U16("data/tilesets/secondary/slateport/metatiles.bin");
 const u16 gMetatileAttributes_Slateport[] = INCBIN_U16("data/tilesets/secondary/slateport/metatile_attributes.bin");
 
+const u16 gMetatiles_Slateport_WindPort[] = INCBIN_U16("data/tilesets/secondary/slateport_windport/metatiles.bin");
+const u16 gMetatileAttributes_Slateport_WindPort[] = INCBIN_U16("data/tilesets/secondary/slateport_windport/metatile_attributes.bin");
+
 const u16 gMetatiles_Mauville[] = INCBIN_U16("data/tilesets/secondary/mauville/metatiles.bin");
 const u16 gMetatileAttributes_Mauville[] = INCBIN_U16("data/tilesets/secondary/mauville/metatile_attributes.bin");
 
