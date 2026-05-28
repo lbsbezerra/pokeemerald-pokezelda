@@ -1277,8 +1277,8 @@ SlateportCity_Text_SternsShipyardFerryComplete:
 	.string "HARBOR.”$"
 
 SlateportCity_Text_PokemonFanClubSign:
-	.string "POKéMON FAN CLUB\n"
-	.string "“Calling all fans of POKéMON!”$"
+	.string "KOROK SEEDS FAN CLUB\n"
+	.string "“Calling all fans of Hestu's 900 dances!”$"
 
 SlateportCity_Text_OceanicMuseumSign:
 	.string "“The endless sea sustains\n"
