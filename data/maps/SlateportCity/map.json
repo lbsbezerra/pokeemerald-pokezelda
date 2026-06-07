@@ -641,6 +641,27 @@
       "elevation": 0,
       "dest_map": "MAP_SLATEPORT_CITY_HOUSE",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 17,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE110",
+      "dest_warp_id": "6"
+    },
+    {
+      "x": 18,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE110",
+      "dest_warp_id": "7"
+    },
+    {
+      "x": 19,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE110",
+      "dest_warp_id": "8"
     }
   ],
   "coord_events": [

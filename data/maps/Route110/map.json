@@ -551,6 +551,27 @@
       "elevation": 0,
       "dest_map": "MAP_ROUTE110_SEASIDE_CYCLING_ROAD_NORTH_ENTRANCE",
       "dest_warp_id": "2"
+    },
+    {
+      "x": 17,
+      "y": 99,
+      "elevation": 0,
+      "dest_map": "MAP_SLATEPORT_CITY",
+      "dest_warp_id": "11"
+    },
+    {
+      "x": 18,
+      "y": 99,
+      "elevation": 0,
+      "dest_map": "MAP_SLATEPORT_CITY",
+      "dest_warp_id": "12"
+    },
+    {
+      "x": 19,
+      "y": 99,
+      "elevation": 0,
+      "dest_map": "MAP_SLATEPORT_CITY",
+      "dest_warp_id": "13"
     }
   ],
   "coord_events": [
