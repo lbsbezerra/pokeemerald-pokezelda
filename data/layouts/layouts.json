@@ -255,7 +255,7 @@
       "id": "LAYOUT_ROUTE110",
       "name": "Route110_Layout",
       "width": 40,
-      "height": 102,
+      "height": 105,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville_Routes",
       "border_filepath": "data/layouts/Route110/border.bin",
