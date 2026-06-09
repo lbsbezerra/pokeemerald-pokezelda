@@ -107,6 +107,17 @@ const struct Tileset gTileset_Mauville =
     .callback = InitTilesetAnim_Mauville,
 };
 
+const struct Tileset gTileset_Mauville_Routes =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Mauville_Routes,
+    .palettes = gTilesetPalettes_Mauville_Routes,
+    .metatiles = gMetatiles_Mauville_Routes,
+    .metatileAttributes = gMetatileAttributes_Mauville_Routes,
+    .callback = InitTilesetAnim_Mauville,
+};
+
 const struct Tileset gTileset_Lavaridge =
 {
     .isCompressed = TRUE,

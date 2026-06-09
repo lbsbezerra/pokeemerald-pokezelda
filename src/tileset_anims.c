@@ -31,6 +31,7 @@ static void TilesetAnim_Dewford(u16);
 static void TilesetAnim_Slateport(u16);
 static void TilesetAnim_Slateport_WindPort(u16);
 static void TilesetAnim_Mauville(u16);
+static void TilesetAnim_Mauville_Routes(u16);
 static void TilesetAnim_Lavaridge(u16);
 static void TilesetAnim_EverGrande(u16);
 static void TilesetAnim_Pacifidlog(u16);
@@ -725,6 +726,13 @@ void InitTilesetAnim_Mauville(void)
     sSecondaryTilesetAnimCallback = TilesetAnim_Mauville;
 }
 
+void InitTilesetAnim_Mauville_Routes(void)
+{
+    sSecondaryTilesetAnimCounter = sPrimaryTilesetAnimCounter;
+    sSecondaryTilesetAnimCounterMax = sPrimaryTilesetAnimCounterMax;
+    sSecondaryTilesetAnimCallback = TilesetAnim_Mauville_Routes;
+}
+
 void InitTilesetAnim_Lavaridge(void)
 {
     sSecondaryTilesetAnimCounter = 0;
@@ -933,6 +941,26 @@ static void TilesetAnim_Mauville(u16 timer)
         QueueAnimTiles_Mauville_Flowers(timer / 8, 6);
     if (timer % 8 == 7)
         QueueAnimTiles_Mauville_Flowers(timer / 8, 7);
+}
+
+static void TilesetAnim_Mauville_Routes(u16 timer)
+{
+    /*if (timer % 8 == 0)
+        QueueAnimTiles_Mauville_Flowers(timer / 8, 0);
+    if (timer % 8 == 1)
+        QueueAnimTiles_Mauville_Flowers(timer / 8, 1);
+    if (timer % 8 == 2)
+        QueueAnimTiles_Mauville_Flowers(timer / 8, 2);
+    if (timer % 8 == 3)
+        QueueAnimTiles_Mauville_Flowers(timer / 8, 3);
+    if (timer % 8 == 4)
+        QueueAnimTiles_Mauville_Flowers(timer / 8, 4);
+    if (timer % 8 == 5)
+        QueueAnimTiles_Mauville_Flowers(timer / 8, 5);
+    if (timer % 8 == 6)
+        QueueAnimTiles_Mauville_Flowers(timer / 8, 6);
+    if (timer % 8 == 7)
+        QueueAnimTiles_Mauville_Flowers(timer / 8, 7);*/
 }
 
 static void TilesetAnim_Lavaridge(u16 timer)
