@@ -444,15 +444,26 @@ u32 FldEff_TallGrass(void)
         sprite->sMapGroup = gFieldEffectArguments[5];
         sprite->sCurrentMap = gFieldEffectArguments[6];
 
-        // --- THE HOT-PATCH OVERRIDE ---
+        // --- THE TINTED-PATCH OVERRIDE ---
         if (objectTemplateId == FLDEFFOBJ_ORANGE_TALL_GRASS)
         {
             // Find where the engine put GENERAL_1 in memory
             u8 paletteSlot = sprite->oam.paletteNum; 
             
-            // Forcefully copy your orange colors directly into the active hardware palette buffer slot
-            CpuCopy16(gFieldEffectObjectPalette_OrangeTallGrass, &gPlttBufferFaded[OBJ_PLTT_ID(paletteSlot)], PLTT_SIZE_4BPP);
+            // 1. ONLY copy to the UNFADED buffer (this keeps the base color orange)
             CpuCopy16(gFieldEffectObjectPalette_OrangeTallGrass, &gPlttBufferUnfaded[OBJ_PLTT_ID(paletteSlot)], PLTT_SIZE_4BPP);
+            
+            // 2. Tell the engine's built-in weather/time system to instantly update the faded palette
+            UpdateSpritePaletteWithWeather(paletteSlot, TRUE);
+
+            // 3. FORCE the Day/Night system to tint this specific slot right now
+            // Depending on which Day/Night system your repo uses, uncomment the line below that matches your codebase:
+            
+            // If using the standard RHH / dynamic palette DNS system:
+            // DynamicTimeOfDayPal_ProcessSpritePalette(paletteSlot);
+            
+            // If using a standard tint-based DNS system:
+            // TintPaletteForDayNight(OBJ_PLTT_ID(paletteSlot));
         }
         // ------------------------------
 
