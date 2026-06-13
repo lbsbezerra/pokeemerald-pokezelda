@@ -41,6 +41,9 @@ void UpdateBobbingEffect(struct ObjectEvent *, struct Sprite *, struct Sprite *)
 static void SpriteCB_UnderwaterSurfBlob(struct Sprite *);
 static u32 ShowDisguiseFieldEffect(u8, u8, u8);
 u32 FldEff_Shadow(void);
+// Orange Tall Grass prototype
+void CreateOrangeTallGrassEffect(struct ObjectEvent *objEvent);
+
 
 // Data used by all the field effects that share UpdateJumpImpactEffect
 #define sJumpElevation  data[0]
@@ -408,10 +411,27 @@ void UpdateShadowFieldEffect(struct Sprite *sprite)
 u32 FldEff_TallGrass(void)
 {
     u8 spriteId;
+    u8 objectTemplateId;
     s16 x = gFieldEffectArguments[0];
     s16 y = gFieldEffectArguments[1];
+    
+    extern const struct Tileset gTileset_Mauville_Routes;
+    // Extern your raw orange palette colors array
+    extern const u16 gFieldEffectObjectPalette_OrangeTallGrass[]; 
+
+    if (gMapHeader.mapLayout->secondaryTileset == &gTileset_Mauville_Routes)
+    {
+        objectTemplateId = FLDEFFOBJ_ORANGE_TALL_GRASS;
+    }
+    else
+    {
+        objectTemplateId = FLDEFFOBJ_TALL_GRASS;
+    }
+
     SetSpritePosToOffsetMapCoords(&x, &y, 8, 8);
-    spriteId = CreateSpriteAtEnd(gFieldEffectObjectTemplatePointers[FLDEFFOBJ_TALL_GRASS], x, y, 0);
+    
+    spriteId = CreateSpriteAtEnd(gFieldEffectObjectTemplatePointers[objectTemplateId], x, y, 0);
+    
     if (spriteId != MAX_SPRITES)
     {
         struct Sprite *sprite = &gSprites[spriteId];
@@ -420,12 +440,24 @@ u32 FldEff_TallGrass(void)
         sprite->sElevation = gFieldEffectArguments[2];
         sprite->sX = gFieldEffectArguments[0];
         sprite->sY = gFieldEffectArguments[1];
-        sprite->sMapNum = gFieldEffectArguments[4]; // Also sLocalId
+        sprite->sMapNum = gFieldEffectArguments[4]; 
         sprite->sMapGroup = gFieldEffectArguments[5];
         sprite->sCurrentMap = gFieldEffectArguments[6];
 
+        // --- THE HOT-PATCH OVERRIDE ---
+        if (objectTemplateId == FLDEFFOBJ_ORANGE_TALL_GRASS)
+        {
+            // Find where the engine put GENERAL_1 in memory
+            u8 paletteSlot = sprite->oam.paletteNum; 
+            
+            // Forcefully copy your orange colors directly into the active hardware palette buffer slot
+            CpuCopy16(gFieldEffectObjectPalette_OrangeTallGrass, &gPlttBufferFaded[OBJ_PLTT_ID(paletteSlot)], PLTT_SIZE_4BPP);
+            CpuCopy16(gFieldEffectObjectPalette_OrangeTallGrass, &gPlttBufferUnfaded[OBJ_PLTT_ID(paletteSlot)], PLTT_SIZE_4BPP);
+        }
+        // ------------------------------
+
         if (gFieldEffectArguments[7])
-            SeekSpriteAnim(sprite, 4); // Skip to end of anim
+            SeekSpriteAnim(sprite, 4);
     }
     return 0;
 }

@@ -1,6 +1,9 @@
 const struct SpritePalette gSpritePalette_GeneralFieldEffect0 = {gFieldEffectObjectPalette0, FLDEFF_PAL_TAG_GENERAL_0};
 const struct SpritePalette gSpritePalette_GeneralFieldEffect1 = {gFieldEffectObjectPalette1, FLDEFF_PAL_TAG_GENERAL_1};
 
+extern const u32 gFieldEffectObjectPic_OrangeTallGrass[];
+extern const u16 gFieldEffectObjectPalette_OrangeTallGrass[];
+
 static const union AnimCmd sAnim_Shadow[] =
 {
     ANIMCMD_FRAME(0, 1),
@@ -116,6 +119,14 @@ static const struct SpriteFrameImage sPicTable_TallGrass[] = {
     overworld_frame(gFieldEffectObjectPic_TallGrass, 2, 2, 4),
 };
 
+static const struct SpriteFrameImage sPicTable_OrangeTallGrass[] = {
+    overworld_frame(gFieldEffectObjectPic_TallGrass, 2, 2, 0),
+    overworld_frame(gFieldEffectObjectPic_TallGrass, 2, 2, 1),
+    overworld_frame(gFieldEffectObjectPic_TallGrass, 2, 2, 2),
+    overworld_frame(gFieldEffectObjectPic_TallGrass, 2, 2, 3),
+    overworld_frame(gFieldEffectObjectPic_TallGrass, 2, 2, 4),
+};
+
 static const union AnimCmd sAnim_TallGrass[] =
 {
     ANIMCMD_FRAME(1, 10),
@@ -140,6 +151,23 @@ const struct SpriteTemplate gFieldEffectObjectTemplate_TallGrass = {
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = UpdateTallGrassFieldEffect,
 };
+
+// ==========================================
+// 1. THE OFFICIAL ORANGE SPRITE TEMPLATE
+// ==========================================
+const struct SpriteTemplate gFieldEffectObjectTemplate_OrangeTallGrass = {
+    .tileTag = TAG_NONE, 
+    .paletteTag = FLDEFF_PAL_TAG_GENERAL_1,
+    .oam = &gObjectEventBaseOam_16x16,
+    .anims = sAnimTable_TallGrass, 
+    .images = sPicTable_OrangeTallGrass, 
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = UpdateTallGrassFieldEffect, 
+};
+
+
+
+
 
 static const struct SpriteFrameImage sPicTable_Ripple[] = {
     overworld_frame(gFieldEffectObjectPic_Ripple, 2, 2, 0),
