@@ -572,6 +572,34 @@
       "elevation": 0,
       "dest_map": "MAP_SLATEPORT_CITY",
       "dest_warp_id": "13"
+    },
+    {
+      "x": 0,
+      "y": 67,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE103",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 1,
+      "y": 68,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE103",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 1,
+      "y": 69,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE103",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 0,
+      "y": 70,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE103",
+      "dest_warp_id": "4"
     }
   ],
   "coord_events": [
