@@ -296,31 +296,17 @@
     },
     {
       "x": 81,
-      "y": 7,
+      "y": 8,
       "elevation": 3,
       "dest_map": "MAP_ROUTE110",
       "dest_warp_id": "9"
     },
     {
-      "x": 80,
-      "y": 8,
-      "elevation": 3,
-      "dest_map": "MAP_ROUTE110",
-      "dest_warp_id": "10"
-    },
-    {
-      "x": 80,
+      "x": 81,
       "y": 9,
       "elevation": 3,
       "dest_map": "MAP_ROUTE110",
-      "dest_warp_id": "11"
-    },
-    {
-      "x": 81,
-      "y": 10,
-      "elevation": 3,
-      "dest_map": "MAP_ROUTE110",
-      "dest_warp_id": "12"
+      "dest_warp_id": "10"
     }
   ],
   "coord_events": [
