@@ -2365,7 +2365,10 @@ $(MID_SUBDIR)/mus_hg_win_minigame.s: %.s: %.mid
 	$(MID) $< $@ -E -R0 -G229 -V091 -p5
 
 $(MID_SUBDIR)/mus_bw_vs_legend.s: %.s: %.mid
-	$(MID) $< $@ -E -R0 -G275 -V090
+	$(MID) $< $@ -E -R0 -G0 -V090
 
 $(MID_SUBDIR)/mus_bw_vs_iris.s: %.s: %.mid
-	$(MID) $< $@ -E -R0 -G274 -V090
+	$(MID) $< $@ -E -R0 -G0 -V090
+
+$(MID_SUBDIR)/mus_kakariko_crypt.s: %.s: %.mid
+	$(MID) $< $@ -E -R50 -G_kakariko_crypt -V086

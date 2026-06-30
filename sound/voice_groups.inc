@@ -277,3 +277,5 @@
 .include "sound/voicegroups/voicegroup274.inc"
 @bw legend
 .include "sound/voicegroups/voicegroup275.inc"
+.include "sound/voicegroups/drumsets/kakariko_crypt.inc"
+.include "sound/voicegroups/kakariko_crypt.inc"

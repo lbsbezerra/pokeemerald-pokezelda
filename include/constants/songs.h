@@ -946,6 +946,7 @@
 #define MUS_HG_WIN_MINIGAME               898 // Cleared Wobbuffet Pop!
 #define MUS_BW_VS_LEGEND                  899 // Battle Vs. Legendary Pokémon - Black and White
 #define MUS_BW_VS_IRIS                    900 // Champion Battle! - Black and White 2
+#define MUS_KAKARIKO_CRYPT                901 // Kakariko Crypt
 
 #define HG_MUSIC_END                      MUS_BW_VS_IRIS
 
