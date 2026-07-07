@@ -946,7 +946,6 @@
 #define MUS_HG_WIN_MINIGAME               898 // Cleared Wobbuffet Pop!
 #define MUS_BW_VS_LEGEND                  899 // Battle Vs. Legendary Pokémon - Black and White
 #define MUS_BW_VS_IRIS                    900 // Champion Battle! - Black and White 2
-#define MUS_KAKARIKO_CRYPT                901 // Kakariko Crypt
 
 #define HG_MUSIC_END                      MUS_BW_VS_IRIS
 
@@ -957,5 +956,7 @@
 #define MUS_ROUTE118                      0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 
 #define MUS_NONE                          0xFFFF
+#define MUS_VS_TRAINER_CADENCEOFHYRULE    902
+#define MUS_VS_TRAINER_CADENCEOFHYRULE_FULL 902
 
 #endif  // GUARD_CONSTANTS_SONGS_H

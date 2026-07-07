@@ -432,8 +432,8 @@ gSongTable::
 	song mus_end, 0, 0
 	song mus_vs_wild, 0, 0
 	song mus_vs_aqua_magma, 0, 0
-	song mus_vs_trainer, 0, 0
-	song mus_kakariko_crypt, 0, 0
+	song mus_vs_trainer_cadenceofhyrule_full, 0, 0
+	song mus_vs_gym_leader, 0, 0
 	song mus_vs_champion, 0, 0
 	song mus_vs_regi, 0, 0
 	song mus_vs_kyogre_groudon, 0, 0
@@ -902,7 +902,8 @@ gSongTable::
 	song mus_hg_win_minigame, 2, 2
 	song mus_bw_vs_legend, 0, 0
 	song mus_bw_vs_iris, 0, 0
-	song mus_kakariko_crypt, 0, 0
+	song mus_vs_trainer_cadenceofhyrule, 0, 0
+	song mus_vs_trainer_cadenceofhyrule_full, 0, 0
 
 	.align 2
 dummy_song_header:
