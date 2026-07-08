@@ -378,7 +378,7 @@ gSongTable::
 	song mus_route119, 0, 0
 	song mus_cycling, 0, 0
 	song mus_poke_mart, 0, 0
-	song mus_littleroot, 0, 0
+	song mus_minishroot, 0, 0
 	song mus_mt_chimney, 0, 0
 	song mus_encounter_female, 0, 0
 	song mus_lilycove, 0, 0
@@ -904,6 +904,7 @@ gSongTable::
 	song mus_bw_vs_iris, 0, 0
 	song mus_vs_trainer_cadenceofhyrule, 0, 0
 	song mus_vs_trainer_cadenceofhyrule_full, 0, 0
+	song mus_minishroot, 0, 0
 
 	.align 2
 dummy_song_header:
