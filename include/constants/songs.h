@@ -959,5 +959,6 @@
 #define MUS_VS_TRAINER_CADENCEOFHYRULE    902
 #define MUS_VS_TRAINER_CADENCEOFHYRULE_FULL 902
 #define MUS_MINISHROOT                      903
+#define MUS_TRAIL101                        904
 
 #endif  // GUARD_CONSTANTS_SONGS_H
