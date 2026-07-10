@@ -386,7 +386,7 @@ gSongTable::
 	song mus_help, 0, 0
 	song mus_underwater, 0, 0
 	song mus_victory_trainer, 0, 0
-	song mus_title, 0, 0
+	song mus_z_title, 0, 0
 	song mus_intro, 0, 0
 	song mus_encounter_may, 0, 0
 	song mus_encounter_intense, 0, 0
@@ -906,6 +906,8 @@ gSongTable::
 	song mus_vs_trainer_cadenceofhyrule_full, 0, 0
 	song mus_minishroot, 0, 0
 	song mus_trail101, 0, 0
+	song mus_z_title, 0, 0
+	song mus_vs_wild_woodlands, MUSIC_PLAYER_BGM, 0
 
 	.align 2
 dummy_song_header:

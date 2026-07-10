@@ -2381,3 +2381,9 @@ $(MID_SUBDIR)/mus_minishroot.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_trail101.s: %.s: %.mid
 	$(MID) $< $@ -E -R50 -G011 -V100
+
+$(MID_SUBDIR)/mus_z_title.s: %.s: %.mid
+	$(MID) $< $@ -E -R50 -G059 -V100
+
+$(MID_SUBDIR)/mus_vs_wild_woodlands.s: %.s: %.mid
+	$(MID) $< $@ -E -R50 -G117 -V100
