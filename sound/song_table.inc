@@ -430,7 +430,7 @@ gSongTable::
 	song mus_encounter_champion, 0, 0
 	song mus_credits, 0, 0
 	song mus_end, 0, 0
-	song mus_vs_wild, 0, 0
+	song mus_vs_wild_woodlands, 0, 0
 	song mus_vs_aqua_magma, 0, 0
 	song mus_vs_trainer_cadenceofhyrule_full, 0, 0
 	song mus_vs_gym_leader, 0, 0
@@ -907,7 +907,7 @@ gSongTable::
 	song mus_minishroot, 0, 0
 	song mus_trail101, 0, 0
 	song mus_z_title, 0, 0
-	song mus_vs_wild_woodlands, MUSIC_PLAYER_BGM, 0
+	song mus_vs_wild_woodlands, 0, 0
 
 	.align 2
 dummy_song_header:
