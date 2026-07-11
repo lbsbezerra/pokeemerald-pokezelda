@@ -1,7 +1,7 @@
 	.align 2
 voicegroup117::
 	voice_keysplit_all voicegroup001
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_open_low_conga, 255, 0, 227, 171
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_2 60, 0, 2, 0, 1, 1, 1
