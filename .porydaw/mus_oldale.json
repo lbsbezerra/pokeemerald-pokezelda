@@ -5,9 +5,9 @@
         "gridTriplet": false,
         "keyHeight": 11,
         "laneHeight": 48,
-        "pxPerBeat": 15.413783363766509,
+        "pxPerBeat": 32,
         "scrollPx": 0,
-        "scrollY": 322,
+        "scrollY": 323,
         "selectedTrack": 0,
         "splitter": [
             718,

@@ -962,5 +962,6 @@
 #define MUS_TRAIL101                        904
 #define MUS_Z_TITLE                         905
 #define MUS_VS_WILD_WOODLANDS               906
+#define MUS_OLDALE_ORDON                    907
 
 #endif  // GUARD_CONSTANTS_SONGS_H
