@@ -2390,3 +2390,6 @@ $(MID_SUBDIR)/mus_vs_wild_woodlands.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_oldale_ordon.s: %.s: %.mid
 	$(MID) $< $@ -E -R50 -G019 -V100
+
+$(MID_SUBDIR)/mus_petalburg_lonlon.s: %.s: %.mid
+	$(MID) $< $@ -E -R50 -G015 -V100

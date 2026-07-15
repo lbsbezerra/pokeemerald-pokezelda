@@ -963,5 +963,6 @@
 #define MUS_Z_TITLE                         905
 #define MUS_VS_WILD_WOODLANDS               906
 #define MUS_OLDALE_ORDON                    907
+#define MUS_PETALBURG_LONLON                908
 
 #endif  // GUARD_CONSTANTS_SONGS_H
