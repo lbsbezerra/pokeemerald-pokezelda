@@ -2386,7 +2386,7 @@ $(MID_SUBDIR)/mus_z_title.s: %.s: %.mid
 	$(MID) $< $@ -E -R50 -G059 -V100
 
 $(MID_SUBDIR)/mus_vs_wild_woodlands.s: %.s: %.mid
-	$(MID) $< $@ -E -R50 -G117 -V100
+	$(MID) $< $@ -E -R50 -G117 -V127
 
 $(MID_SUBDIR)/mus_oldale_ordon.s: %.s: %.mid
 	$(MID) $< $@ -E -R50 -G019 -V100
