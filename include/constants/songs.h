@@ -964,5 +964,6 @@
 #define MUS_VS_WILD_WOODLANDS               906
 #define MUS_OLDALE_ORDON                    907
 #define MUS_PETALBURG_LONLON                908
+#define MUS_TRAIL104                        909
 
 #endif  // GUARD_CONSTANTS_SONGS_H

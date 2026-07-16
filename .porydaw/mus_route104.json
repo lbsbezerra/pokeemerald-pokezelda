@@ -3,12 +3,12 @@
         "editCursorTick": 0,
         "gridMinDenom": 0,
         "gridTriplet": false,
-        "keyHeight": 11,
+        "keyHeight": 8,
         "laneHeight": 48,
         "pxPerBeat": 32,
         "scrollPx": 0,
-        "scrollY": 283,
-        "selectedTrack": 2,
+        "scrollY": 222,
+        "selectedTrack": 0,
         "splitter": [
             501,
             150

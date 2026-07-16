@@ -374,7 +374,7 @@ gSongTable::
 	song mus_verdanturf, 0, 0
 	song mus_rustboro, 0, 0
 	song mus_poke_center, 0, 0
-	song mus_route104, 0, 0
+	song mus_trail104, 0, 0
 	song mus_route119, 0, 0
 	song mus_cycling, 0, 0
 	song mus_poke_mart, 0, 0
@@ -910,6 +910,7 @@ gSongTable::
 	song mus_vs_wild_woodlands, 0, 0
 	song mus_oldale_ordon, 0, 0
 	song mus_petalburg_lonlon, 0, 0
+	song mus_trail104, 0, 0
 
 	.align 2
 dummy_song_header:
