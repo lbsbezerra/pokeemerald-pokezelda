@@ -3,7 +3,7 @@ voicegroup046::
 	voice_keysplit voicegroup005, KeySplitTable1
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_14, 0, 1, 12, 0
 	voice_square_1_alt 60, 0, 0, 0, 1, 1, 9, 0
-	voice_square_2_alt 60, 0, 2, 0, 2, 6, 3
+	voice_keysplit_all voicegroup001
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_3, 0, 7, 15, 1
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_fretless_bass, 255, 253, 0, 216
 	voice_square_2_alt 60, 0, 1, 0, 2, 6, 3

@@ -965,5 +965,6 @@
 #define MUS_OLDALE_ORDON                    907
 #define MUS_PETALBURG_LONLON                908
 #define MUS_TRAIL104                        909
+#define MUS_POKE_CENTER_FOUNTAIN            910
 
 #endif  // GUARD_CONSTANTS_SONGS_H
