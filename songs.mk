@@ -2399,3 +2399,6 @@ $(MID_SUBDIR)/mus_trail104.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_poke_center_fountain.s: %.s: %.mid
 	$(MID) $< $@ -E -R50 -G046 -V127
+
+$(MID_SUBDIR)/mus_poke_mart_beedle.s: %.s: %.mid
+	$(MID) $< $@ -E -R50 -G050 -V080

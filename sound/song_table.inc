@@ -377,7 +377,7 @@ gSongTable::
 	song mus_trail104, 0, 0
 	song mus_route119, 0, 0
 	song mus_cycling, 0, 0
-	song mus_poke_mart, 0, 0
+	song mus_poke_mart_beedle, 0, 0
 	song mus_minishroot, 0, 0
 	song mus_mt_chimney, 0, 0
 	song mus_encounter_female, 0, 0
@@ -912,6 +912,7 @@ gSongTable::
 	song mus_petalburg_lonlon, 0, 0
 	song mus_trail104, 0, 0
 	song mus_poke_center_fountain, 0, 0
+	song mus_poke_mart_beedle, 0, 0
 
 	.align 2
 dummy_song_header:
