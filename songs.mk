@@ -2402,3 +2402,6 @@ $(MID_SUBDIR)/mus_poke_center_fountain.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_poke_mart_beedle.s: %.s: %.mid
 	$(MID) $< $@ -E -R50 -G050 -V080
+
+$(MID_SUBDIR)/mus_petalburg_foundwoods.s: %.s: %.mid
+	$(MID) $< $@ -E -R50 -G018 -V100

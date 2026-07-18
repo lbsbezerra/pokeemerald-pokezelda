@@ -339,7 +339,7 @@ gSongTable::
 	song mus_oldale_ordon, 0, 0
 	song mus_gym, 0, 0
 	song mus_surf, 0, 0
-	song mus_petalburg_woods, 0, 0
+	song mus_petalburg_foundwoods, 0, 0
 	song mus_level_up, 2, 2
 	song mus_heal, 2, 2
 	song mus_obtain_badge, 2, 2
@@ -913,6 +913,7 @@ gSongTable::
 	song mus_trail104, 0, 0
 	song mus_poke_center_fountain, 0, 0
 	song mus_poke_mart_beedle, 0, 0
+	song mus_petalburg_foundwoods, 0, 0
 
 	.align 2
 dummy_song_header:
