@@ -431,7 +431,7 @@ gSongTable::
 	song mus_credits, 0, 0
 	song mus_end, 0, 0
 	song mus_vs_wild_woodlands, 0, 0
-	song mus_vs_aqua_magma, 0, 0
+	song mus_vs_aqua_magma_yiga, 0, 0
 	song mus_vs_trainer_cadenceofhyrule_full, 0, 0
 	song mus_vs_gym_leader, 0, 0
 	song mus_vs_champion, 0, 0
@@ -915,6 +915,7 @@ gSongTable::
 	song mus_poke_mart_beedle, 0, 0
 	song mus_petalburg_foundwoods, 0, 0
 	song mus_rustboro_clocktown, 0, 0
+	song mus_vs_aqua_magma_yiga, 0, 0
 
 	.align 2
 dummy_song_header:
