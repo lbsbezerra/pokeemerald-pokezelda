@@ -2405,3 +2405,6 @@ $(MID_SUBDIR)/mus_poke_mart_beedle.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_petalburg_foundwoods.s: %.s: %.mid
 	$(MID) $< $@ -E -R50 -G018 -V100
+
+$(MID_SUBDIR)/mus_rustboro_clocktown.s: %.s: %.mid
+	$(MID) $< $@ -E -R50 -G045 -V100

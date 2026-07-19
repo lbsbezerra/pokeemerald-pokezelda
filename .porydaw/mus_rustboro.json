@@ -1,14 +1,14 @@
 {
     "view": {
-        "editCursorTick": 144960,
+        "editCursorTick": 0,
         "gridMinDenom": 0,
         "gridTriplet": false,
         "keyHeight": 7,
         "laneHeight": 48,
-        "pxPerBeat": 11.507534886702215,
+        "pxPerBeat": 32,
         "scrollPx": 0,
-        "scrollY": 149,
-        "selectedTrack": 11,
+        "scrollY": 198,
+        "selectedTrack": 0,
         "splitter": [
             501,
             150

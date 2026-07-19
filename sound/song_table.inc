@@ -372,7 +372,7 @@ gSongTable::
 	song mus_link_contest_p4, 0, 0
 	song mus_encounter_rich, 0, 0
 	song mus_verdanturf, 0, 0
-	song mus_rustboro, 0, 0
+	song mus_rustboro_clocktown, 0, 0
 	song mus_poke_center_fountain, 0, 0
 	song mus_trail104, 0, 0
 	song mus_route119, 0, 0
@@ -914,6 +914,7 @@ gSongTable::
 	song mus_poke_center_fountain, 0, 0
 	song mus_poke_mart_beedle, 0, 0
 	song mus_petalburg_foundwoods, 0, 0
+	song mus_rustboro_clocktown, 0, 0
 
 	.align 2
 dummy_song_header:

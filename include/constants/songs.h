@@ -968,5 +968,6 @@
 #define MUS_POKE_CENTER_FOUNTAIN            910
 #define MUS_POKE_MART_BEEDLE                911
 #define MUS_PETALBURG_FOUNDWOODS            912
+#define MUS_RUSTBORO_CLOCKTOWN              913
 
 #endif  // GUARD_CONSTANTS_SONGS_H
