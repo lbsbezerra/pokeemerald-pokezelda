@@ -2,7 +2,7 @@
 voicegroup045::
 	voice_keysplit_all voicegroup001
 	voice_square_1_alt 60, 0, 0, 1, 0, 2, 0, 1
-	voice_directsound 60, 0, DirectSoundWaveData_dp_harp_c4_16, 255, 247, 0, 208
+	voice_directsound 60, 0, DirectSoundWaveData_hg_096flt1c6, 255, 246, 78, 192
 	voice_square_2_alt 60, 0, 3, 1, 2, 6, 0
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_1, 0, 7, 15, 1
 	voice_keysplit voicegroup009, KeySplitTable5
