@@ -2,7 +2,7 @@
   "map_sections": [
     {
       "map_section": "MAPSEC_LITTLEROOT_TOWN",
-      "name": "LITTLEROOT TOWN",
+      "name": "MINISHROOT TOWN",
       "x": 4,
       "y": 11,
       "width": 1,
@@ -10,7 +10,7 @@
     },
     {
       "map_section": "MAPSEC_OLDALE_TOWN",
-      "name": "OLDALE TOWN",
+      "name": "ORDONIA TOWN",
       "x": 4,
       "y": 9,
       "width": 1,
@@ -18,7 +18,7 @@
     },
     {
       "map_section": "MAPSEC_DEWFORD_TOWN",
-      "name": "DEWFORD TOWN",
+      "name": "SUBROSIA ISLE",
       "x": 2,
       "y": 14,
       "width": 1,
@@ -26,7 +26,7 @@
     },
     {
       "map_section": "MAPSEC_LAVARIDGE_TOWN",
-      "name": "LAVARIDGE TOWN",
+      "name": "GORON CITY",
       "x": 5,
       "y": 3,
       "width": 1,
@@ -34,7 +34,7 @@
     },
     {
       "map_section": "MAPSEC_FALLARBOR_TOWN",
-      "name": "FALLARBOR TOWN",
+      "name": "TARREY TOWN",
       "x": 3,
       "y": 0,
       "width": 1,
@@ -42,7 +42,7 @@
     },
     {
       "map_section": "MAPSEC_VERDANTURF_TOWN",
-      "name": "VERDANTURF TOWN",
+      "name": "KAKARIKO VILLAGE",
       "x": 4,
       "y": 6,
       "width": 1,
@@ -50,7 +50,7 @@
     },
     {
       "map_section": "MAPSEC_PACIFIDLOG_TOWN",
-      "name": "PACIFIDLOG TOWN",
+      "name": "LURELIN TOWN",
       "x": 17,
       "y": 10,
       "width": 1,
@@ -58,7 +58,7 @@
     },
     {
       "map_section": "MAPSEC_PETALBURG_CITY",
-      "name": "PETALBURG CITY",
+      "name": "PETALBURG RANCH",
       "x": 1,
       "y": 9,
       "width": 1,
@@ -66,7 +66,7 @@
     },
     {
       "map_section": "MAPSEC_SLATEPORT_CITY",
-      "name": "SLATEPORT CITY",
+      "name": "WINDFALL PORT",
       "x": 8,
       "y": 10,
       "width": 1,
@@ -74,7 +74,7 @@
     },
     {
       "map_section": "MAPSEC_MAUVILLE_CITY",
-      "name": "MAUVILLE CITY",
+      "name": "GERUDO VILLAGE",
       "x": 8,
       "y": 6,
       "width": 2,
@@ -82,7 +82,7 @@
     },
     {
       "map_section": "MAPSEC_RUSTBORO_CITY",
-      "name": "RUSTBORO CITY",
+      "name": "RUST CLOCK TOWN",
       "x": 0,
       "y": 5,
       "width": 1,
@@ -90,7 +90,7 @@
     },
     {
       "map_section": "MAPSEC_FORTREE_CITY",
-      "name": "FORTREE CITY",
+      "name": "RITO TREE",
       "x": 12,
       "y": 0,
       "width": 1,
@@ -106,7 +106,7 @@
     },
     {
       "map_section": "MAPSEC_MOSSDEEP_CITY",
-      "name": "MOSSDEEP CITY",
+      "name": "MOSSLOFT CITY",
       "x": 24,
       "y": 5,
       "width": 2,
@@ -114,7 +114,7 @@
     },
     {
       "map_section": "MAPSEC_SOOTOPOLIS_CITY",
-      "name": "SOOTOPOLIS CITY",
+      "name": "ZOROPOLIS CITY",
       "x": 21,
       "y": 7,
       "width": 1,
@@ -130,7 +130,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_101",
-      "name": "ROUTE 101",
+      "name": "TRAIL 101",
       "x": 4,
       "y": 10,
       "width": 1,
@@ -138,7 +138,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_102",
-      "name": "ROUTE 102",
+      "name": "TRAIL 102",
       "x": 2,
       "y": 9,
       "width": 2,
@@ -146,7 +146,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_103",
-      "name": "ROUTE 103",
+      "name": "TRAIL 103",
       "x": 4,
       "y": 8,
       "width": 4,
@@ -154,7 +154,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_104",
-      "name": "ROUTE 104",
+      "name": "TRAIL 104",
       "x": 0,
       "y": 7,
       "width": 1,
@@ -162,7 +162,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_105",
-      "name": "ROUTE 105",
+      "name": "TRAIL 105",
       "x": 0,
       "y": 10,
       "width": 1,
@@ -170,7 +170,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_106",
-      "name": "ROUTE 106",
+      "name": "TRAIL 106",
       "x": 0,
       "y": 13,
       "width": 2,
@@ -178,7 +178,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_107",
-      "name": "ROUTE 107",
+      "name": "TRAIL 107",
       "x": 3,
       "y": 14,
       "width": 3,
@@ -186,7 +186,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_108",
-      "name": "ROUTE 108",
+      "name": "TRAIL 108",
       "x": 6,
       "y": 14,
       "width": 2,
@@ -194,7 +194,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_109",
-      "name": "ROUTE 109",
+      "name": "TRAIL 109",
       "x": 8,
       "y": 12,
       "width": 1,
@@ -202,7 +202,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_110",
-      "name": "ROUTE 110",
+      "name": "TRAIL 110",
       "x": 8,
       "y": 7,
       "width": 1,
@@ -210,7 +210,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_111",
-      "name": "ROUTE 111",
+      "name": "TRAIL 111",
       "x": 8,
       "y": 0,
       "width": 1,
@@ -218,7 +218,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_112",
-      "name": "ROUTE 112",
+      "name": "TRAIL 112",
       "x": 6,
       "y": 3,
       "width": 2,
@@ -226,7 +226,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_113",
-      "name": "ROUTE 113",
+      "name": "TRAIL 113",
       "x": 4,
       "y": 0,
       "width": 4,
@@ -234,7 +234,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_114",
-      "name": "ROUTE 114",
+      "name": "TRAIL 114",
       "x": 1,
       "y": 0,
       "width": 2,
@@ -242,7 +242,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_115",
-      "name": "ROUTE 115",
+      "name": "TRAIL 115",
       "x": 0,
       "y": 2,
       "width": 1,
@@ -250,7 +250,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_116",
-      "name": "ROUTE 116",
+      "name": "TRAIL 116",
       "x": 1,
       "y": 5,
       "width": 4,
@@ -258,7 +258,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_117",
-      "name": "ROUTE 117",
+      "name": "TRAIL 117",
       "x": 5,
       "y": 6,
       "width": 3,
@@ -266,7 +266,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_118",
-      "name": "ROUTE 118",
+      "name": "TRAIL 118",
       "x": 10,
       "y": 6,
       "width": 2,
@@ -274,7 +274,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_119",
-      "name": "ROUTE 119",
+      "name": "TRAIL 119",
       "x": 11,
       "y": 0,
       "width": 1,
@@ -282,7 +282,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_120",
-      "name": "ROUTE 120",
+      "name": "TRAIL 120",
       "x": 13,
       "y": 0,
       "width": 1,
@@ -290,7 +290,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_121",
-      "name": "ROUTE 121",
+      "name": "TRAIL 121",
       "x": 14,
       "y": 3,
       "width": 4,
@@ -298,7 +298,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_122",
-      "name": "ROUTE 122",
+      "name": "TRAIL 122",
       "x": 16,
       "y": 4,
       "width": 1,
@@ -306,7 +306,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_123",
-      "name": "ROUTE 123",
+      "name": "TRAIL 123",
       "x": 12,
       "y": 6,
       "width": 5,
@@ -314,7 +314,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_124",
-      "name": "ROUTE 124",
+      "name": "TRAIL 124",
       "x": 20,
       "y": 3,
       "width": 4,
@@ -322,7 +322,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_125",
-      "name": "ROUTE 125",
+      "name": "TRAIL 125",
       "x": 24,
       "y": 3,
       "width": 2,
@@ -330,7 +330,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_126",
-      "name": "ROUTE 126",
+      "name": "TRAIL 126",
       "x": 20,
       "y": 6,
       "width": 3,
@@ -338,7 +338,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_127",
-      "name": "ROUTE 127",
+      "name": "TRAIL 127",
       "x": 23,
       "y": 6,
       "width": 3,
@@ -346,7 +346,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_128",
-      "name": "ROUTE 128",
+      "name": "TRAIL 128",
       "x": 23,
       "y": 9,
       "width": 4,
@@ -354,7 +354,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_129",
-      "name": "ROUTE 129",
+      "name": "TRAIL 129",
       "x": 24,
       "y": 10,
       "width": 2,
@@ -362,7 +362,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_130",
-      "name": "ROUTE 130",
+      "name": "TRAIL 130",
       "x": 21,
       "y": 10,
       "width": 3,
@@ -370,7 +370,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_131",
-      "name": "ROUTE 131",
+      "name": "TRAIL 131",
       "x": 18,
       "y": 10,
       "width": 3,
@@ -378,7 +378,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_132",
-      "name": "ROUTE 132",
+      "name": "TRAIL 132",
       "x": 15,
       "y": 10,
       "width": 2,
@@ -386,7 +386,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_133",
-      "name": "ROUTE 133",
+      "name": "TRAIL 133",
       "x": 12,
       "y": 10,
       "width": 3,
@@ -394,7 +394,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_134",
-      "name": "ROUTE 134",
+      "name": "TRAIL 134",
       "x": 9,
       "y": 10,
       "width": 3,
@@ -466,7 +466,7 @@
     },
     {
       "map_section": "MAPSEC_BATTLE_FRONTIER",
-      "name": "BATTLE FRONTIER",
+      "name": "DARK FRONTIER",
       "x": 22,
       "y": 12,
       "width": 1,
@@ -474,7 +474,7 @@
     },
     {
       "map_section": "MAPSEC_PETALBURG_WOODS",
-      "name": "PETALBURG WOODS",
+      "name": "FOUND WOODS",
       "x": 0,
       "y": 8,
       "width": 1,
@@ -482,7 +482,7 @@
     },
     {
       "map_section": "MAPSEC_RUSTURF_TUNNEL",
-      "name": "RUSTURF TUNNEL",
+      "name": "CLOCKARIKO TUNNEL",
       "x": 2,
       "y": 5,
       "width": 1,
@@ -794,7 +794,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_4_POKECENTER",
-      "name": "ROUTE 4",
+      "name": "TRAIL 4",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -802,7 +802,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_10_POKECENTER",
-      "name": "ROUTE 10",
+      "name": "TRAIL 10",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -810,7 +810,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_1",
-      "name": "ROUTE 1",
+      "name": "TRAIL 1",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -818,7 +818,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_2",
-      "name": "ROUTE 2",
+      "name": "TRAIL 2",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -826,7 +826,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_3",
-      "name": "ROUTE 3",
+      "name": "TRAIL 3",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -834,7 +834,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_4",
-      "name": "ROUTE 4",
+      "name": "TRAIL 4",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -842,7 +842,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_5",
-      "name": "ROUTE 5",
+      "name": "TRAIL 5",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -850,7 +850,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_6",
-      "name": "ROUTE 6",
+      "name": "TRAIL 6",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -858,7 +858,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_7",
-      "name": "ROUTE 7",
+      "name": "TRAIL 7",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -866,7 +866,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_8",
-      "name": "ROUTE 8",
+      "name": "TRAIL 8",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -874,7 +874,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_9",
-      "name": "ROUTE 9",
+      "name": "TRAIL 9",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -882,7 +882,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_10",
-      "name": "ROUTE 10",
+      "name": "TRAIL 10",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -890,7 +890,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_11",
-      "name": "ROUTE 11",
+      "name": "TRAIL 11",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -898,7 +898,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_12",
-      "name": "ROUTE 12",
+      "name": "TRAIL 12",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -906,7 +906,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_13",
-      "name": "ROUTE 13",
+      "name": "TRAIL 13",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -914,7 +914,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_14",
-      "name": "ROUTE 14",
+      "name": "TRAIL 14",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -922,7 +922,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_15",
-      "name": "ROUTE 15",
+      "name": "TRAIL 15",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -930,7 +930,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_16",
-      "name": "ROUTE 16",
+      "name": "TRAIL 16",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -938,7 +938,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_17",
-      "name": "ROUTE 17",
+      "name": "TRAIL 17",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -946,7 +946,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_18",
-      "name": "ROUTE 18",
+      "name": "TRAIL 18",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -954,7 +954,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_19",
-      "name": "ROUTE 19",
+      "name": "TRAIL 19",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -962,7 +962,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_20",
-      "name": "ROUTE 20",
+      "name": "TRAIL 20",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -970,7 +970,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_21",
-      "name": "ROUTE 21",
+      "name": "TRAIL 21",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -978,7 +978,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_22",
-      "name": "ROUTE 22",
+      "name": "TRAIL 22",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -986,7 +986,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_23",
-      "name": "ROUTE 23",
+      "name": "TRAIL 23",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -994,7 +994,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_24",
-      "name": "ROUTE 24",
+      "name": "TRAIL 24",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1002,7 +1002,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_25",
-      "name": "ROUTE 25",
+      "name": "TRAIL 25",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1258,7 +1258,7 @@
     },
     {
       "map_section": "MAPSEC_DRACO_CHAMBER",
-      "name": "ROUTE 132 NORTH",
+      "name": "TRAIL 132 NORTH",
       "x": 15,
       "y": 9,
       "width": 1,
@@ -1266,7 +1266,7 @@
     },
     {
       "map_section": "MAPSEC_CAVE_OF_SHOCK",
-      "name": "ROUTE 110 EAST",
+      "name": "TRAIL 110 EAST",
       "x": 9,
       "y": 7,
       "width": 1,
