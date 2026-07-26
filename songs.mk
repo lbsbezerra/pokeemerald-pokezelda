@@ -2411,3 +2411,6 @@ $(MID_SUBDIR)/mus_rustboro_clocktown.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_vs_aqua_magma_yiga.s: %.s: %.mid
 	$(MID) $< $@ -E -R50 -G118 -V100
+
+$(MID_SUBDIR)/mus_encounter_aqua_yiga.s: %.s: %.mid
+	$(MID) $< $@ -E -R50 -G065 -V100

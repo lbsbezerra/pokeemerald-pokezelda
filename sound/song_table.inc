@@ -392,7 +392,7 @@ gSongTable::
 	song mus_encounter_intense, 0, 0
 	song mus_encounter_cool, 0, 0
 	song mus_route113, 0, 0
-	song mus_encounter_aqua, 0, 0
+	song mus_encounter_aqua_yiga, 0, 0
 	song mus_follow_me, 0, 0
 	song mus_encounter_brendan, 0, 0
 	song mus_ever_grande, 0, 0
@@ -916,6 +916,7 @@ gSongTable::
 	song mus_petalburg_foundwoods, 0, 0
 	song mus_rustboro_clocktown, 0, 0
 	song mus_vs_aqua_magma_yiga, 0, 0
+	song mus_encounter_aqua_yiga, 0, 0
 
 	.align 2
 dummy_song_header:

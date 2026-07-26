@@ -970,5 +970,6 @@
 #define MUS_PETALBURG_FOUNDWOODS            912
 #define MUS_RUSTBORO_CLOCKTOWN              913
 #define MUS_VS_AQUA_MAGMA_YIGA              914
+#define MUS_ENCOUNTER_AQUA_YIGA             915
 
 #endif  // GUARD_CONSTANTS_SONGS_H
