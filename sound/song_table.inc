@@ -337,7 +337,7 @@ gSongTable::
 	song mus_route120, 0, 0
 	song mus_petalburg_lonlon, 0, 0
 	song mus_oldale_ordon, 0, 0
-	song mus_gym, 0, 0
+	song mus_gym_shrine, 0, 0
 	song mus_surf, 0, 0
 	song mus_petalburg_foundwoods, 0, 0
 	song mus_level_up, 2, 2
@@ -917,6 +917,7 @@ gSongTable::
 	song mus_rustboro_clocktown, 0, 0
 	song mus_vs_aqua_magma_yiga, 0, 0
 	song mus_encounter_aqua_yiga, 0, 0
+	song mus_gym_shrine, 0, 0
 
 	.align 2
 dummy_song_header:
