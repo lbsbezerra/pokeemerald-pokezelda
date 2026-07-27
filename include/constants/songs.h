@@ -972,5 +972,6 @@
 #define MUS_VS_AQUA_MAGMA_YIGA              914
 #define MUS_ENCOUNTER_AQUA_YIGA             915
 #define MUS_GYM_SHRINE                      916
+#define MUS_VS_GYM_LEADER_SHRINE            917
 
 #endif  // GUARD_CONSTANTS_SONGS_H

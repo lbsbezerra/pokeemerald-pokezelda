@@ -433,7 +433,7 @@ gSongTable::
 	song mus_vs_wild_woodlands, 0, 0
 	song mus_vs_aqua_magma_yiga, 0, 0
 	song mus_vs_trainer_cadenceofhyrule_full, 0, 0
-	song mus_vs_gym_leader, 0, 0
+	song mus_vs_gym_leader_shrine, 0, 0
 	song mus_vs_champion, 0, 0
 	song mus_vs_regi, 0, 0
 	song mus_vs_kyogre_groudon, 0, 0
@@ -918,6 +918,7 @@ gSongTable::
 	song mus_vs_aqua_magma_yiga, 0, 0
 	song mus_encounter_aqua_yiga, 0, 0
 	song mus_gym_shrine, 0, 0
+	song mus_vs_gym_leader_shrine, 0, 0
 
 	.align 2
 dummy_song_header:
