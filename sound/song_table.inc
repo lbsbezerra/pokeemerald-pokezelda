@@ -347,7 +347,7 @@ gSongTable::
 	song mus_evolved, 2, 2
 	song mus_obtain_tmhm, 2, 2
 	song mus_lilycove_museum, 0, 0
-	song mus_route122, 0, 0
+	song mus_trail122, 0, 0
 	song mus_oceanic_museum, 0, 0
 	song mus_evolution_intro, 2, 2
 	song mus_evolution, 0, 0
@@ -404,7 +404,7 @@ gSongTable::
 	song mus_safari_zone, 0, 0
 	song mus_victory_road, 0, 0
 	song mus_aqua_magma_hideout, 0, 0
-	song mus_sailing, 0, 0
+	song mus_sailing_ph, 0, 0
 	song mus_mt_pyre, 0, 0
 	song mus_slateport, 0, 0
 	song mus_mt_pyre_exterior, 0, 0
@@ -919,6 +919,8 @@ gSongTable::
 	song mus_encounter_aqua_yiga, 0, 0
 	song mus_gym_shrine, 0, 0
 	song mus_vs_gym_leader_shrine, 0, 0
+	song mus_sailing_ph, 0, 0
+	song mus_trail122, 0, 0
 
 	.align 2
 dummy_song_header:
