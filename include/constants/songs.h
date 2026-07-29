@@ -975,5 +975,6 @@
 #define MUS_VS_GYM_LEADER_SHRINE            917
 #define MUS_SAILING_PH                      918
 #define MUS_TRAIL122                        919
+#define MUS_DEWFORD_SUBROSIA                920
 
 #endif  // GUARD_CONSTANTS_SONGS_H

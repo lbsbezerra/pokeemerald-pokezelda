@@ -2426,3 +2426,6 @@ $(MID_SUBDIR)/mus_sailing_ph.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_trail122.s: %.s: %.mid
 	$(MID) $< $@ -E -R50 -G021 -V100
+
+$(MID_SUBDIR)/mus_dewford_subrosia.s: %.s: %.mid
+	$(MID) $< $@ -E -R50 -G073 -V100

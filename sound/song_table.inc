@@ -400,7 +400,7 @@ gSongTable::
 	song mus_victory_aqua_magma, 0, 0
 	song mus_cable_car, 0, 0
 	song mus_game_corner, 0, 0
-	song mus_dewford, 0, 0
+	song mus_dewford_subrosia, 0, 0
 	song mus_safari_zone, 0, 0
 	song mus_victory_road, 0, 0
 	song mus_aqua_magma_hideout, 0, 0
@@ -921,6 +921,7 @@ gSongTable::
 	song mus_vs_gym_leader_shrine, 0, 0
 	song mus_sailing_ph, 0, 0
 	song mus_trail122, 0, 0
+	song mus_dewford_subrosia, 0, 0
 
 	.align 2
 dummy_song_header:
