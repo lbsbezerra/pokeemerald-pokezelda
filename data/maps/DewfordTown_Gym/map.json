@@ -5,7 +5,7 @@
   "music": "MUS_GYM",
   "region_map_section": "MAPSEC_DEWFORD_TOWN",
   "requires_flash": false,
-  "weather": "WEATHER_NONE",
+  "weather": "WEATHER_UNDERWATER",
   "map_type": "MAP_TYPE_INDOOR",
   "allow_cycling": false,
   "allow_escaping": false,
@@ -69,7 +69,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_2",
       "x": 4,
-      "y": 22,
+      "y": 25,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
