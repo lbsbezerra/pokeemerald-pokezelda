@@ -4865,6 +4865,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(SE_PIKE_CURTAIN_OPEN     , "SE-PIKE-CURTAIN-OPEN"     ) \
     X(SE_SUDOWOODO_SHAKE       , "SE-SUDOWOODO-SHAKE"       ) \
     X(MUS_DUMMY                , "MUS-DUMMY"                ) \
+    X(SE_PC_ON_ZELDAJINGLE     , "SE-PC-ON-ZELDAJINGLE"     ) \
     X(PH_TRAP_BLEND            , "PH-TRAP-BLEND"            ) \
     X(PH_TRAP_HELD             , "PH-TRAP-HELD"             ) \
     X(PH_TRAP_SOLO             , "PH-TRAP-SOLO"             ) \

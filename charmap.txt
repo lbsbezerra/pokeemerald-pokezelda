@@ -738,6 +738,7 @@ SE_ARENA_TIMEUP2                 = 0A 01
 SE_PIKE_CURTAIN_CLOSE            = 0B 01
 SE_PIKE_CURTAIN_OPEN             = 0C 01
 SE_SUDOWOODO_SHAKE               = 0D 01
+SE_PC_ON_ZELDAJINGLE             = 0E 01
 PH_TRAP_BLEND                    = 0F 01
 PH_TRAP_HELD                     = 10 01
 PH_TRAP_SOLO                     = 11 01

@@ -5,7 +5,7 @@ gSongTable::
 	song se_use_item, 1, 1
 	song se_pc_login, 1, 1
 	song se_pc_off, 1, 1
-	song se_pc_on, 1, 1
+	song se_pc_on_zeldajingle, 1, 1
 	song se_select, 2, 2
 	song se_win_open, 1, 1
 	song se_wall_hit, 2, 2
@@ -271,7 +271,7 @@ gSongTable::
 	song se_pike_curtain_close, 1, 1
 	song se_pike_curtain_open, 1, 1
 	song se_sudowoodo_shake, 1, 1
-	song mus_dummy, 0, 0
+	song se_pc_on_zeldajingle, 0, 0
 	song ph_trap_blend, 2, 2
 	song ph_trap_held, 2, 2
 	song ph_trap_solo, 2, 2

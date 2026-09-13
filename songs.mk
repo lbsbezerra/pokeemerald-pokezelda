@@ -2432,3 +2432,6 @@ $(MID_SUBDIR)/mus_dewford_subrosia.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_heal_fairyfountain.s: %.s: %.mid
 	$(MID) $< $@ -E -R50 -G012 -V100
+
+$(MID_SUBDIR)/se_pc_on_zeldajingle.s: %.s: %.mid
+	$(MID) $< $@ -E -R50 -G127 -V100
