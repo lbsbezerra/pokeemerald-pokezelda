@@ -341,7 +341,7 @@ gSongTable::
 	song mus_surf, 0, 0
 	song mus_petalburg_foundwoods, 0, 0
 	song mus_level_up, 2, 2
-	song mus_heal, 2, 2
+	song mus_heal_fairyfountain, 2, 2
 	song mus_obtain_badge, 2, 2
 	song mus_obtain_item, 2, 2
 	song mus_evolved, 2, 2
@@ -902,6 +902,7 @@ gSongTable::
 	song mus_hg_win_minigame, 2, 2
 	song mus_bw_vs_legend, 0, 0
 	song mus_bw_vs_iris, 0, 0
+	song mus_heal_fairyfountain, 0, 0
 	song mus_vs_trainer_cadenceofhyrule, 0, 0
 	song mus_vs_trainer_cadenceofhyrule_full, 0, 0
 	song mus_minishroot, 0, 0

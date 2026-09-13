@@ -2429,3 +2429,6 @@ $(MID_SUBDIR)/mus_trail122.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_dewford_subrosia.s: %.s: %.mid
 	$(MID) $< $@ -E -R50 -G073 -V110
+
+$(MID_SUBDIR)/mus_heal_fairyfountain.s: %.s: %.mid
+	$(MID) $< $@ -E -R50 -G012 -V100

@@ -946,35 +946,36 @@
 #define MUS_HG_WIN_MINIGAME               898 // Cleared Wobbuffet Pop!
 #define MUS_BW_VS_LEGEND                  899 // Battle Vs. Legendary Pokémon - Black and White
 #define MUS_BW_VS_IRIS                    900 // Champion Battle! - Black and White 2
+#define MUS_HEAL_FAIRYFOUNTAIN              901
 
 #define HG_MUSIC_END                      MUS_BW_VS_IRIS
 
 #define SONGS_END                         HG_MUSIC_END
 #define END_SE                            PH_NURSE_SOLO
-#define END_MUS                           MUS_BW_VS_IRIS
+#define END_MUS                           MUS_HEAL_FAIRYFOUNTAIN
 
 #define MUS_ROUTE118                      0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 
 #define MUS_NONE                          0xFFFF
-#define MUS_VS_TRAINER_CADENCEOFHYRULE    902
-#define MUS_VS_TRAINER_CADENCEOFHYRULE_FULL 902
-#define MUS_MINISHROOT                      903
-#define MUS_TRAIL101                        904
-#define MUS_Z_TITLE                         905
-#define MUS_VS_WILD_WOODLANDS               906
-#define MUS_OLDALE_ORDON                    907
-#define MUS_PETALBURG_LONLON                908
-#define MUS_TRAIL104                        909
-#define MUS_POKE_CENTER_FOUNTAIN            910
-#define MUS_POKE_MART_BEEDLE                911
-#define MUS_PETALBURG_FOUNDWOODS            912
-#define MUS_RUSTBORO_CLOCKTOWN              913
-#define MUS_VS_AQUA_MAGMA_YIGA              914
-#define MUS_ENCOUNTER_AQUA_YIGA             915
-#define MUS_GYM_SHRINE                      916
-#define MUS_VS_GYM_LEADER_SHRINE            917
-#define MUS_SAILING_PH                      918
-#define MUS_TRAIL122                        919
-#define MUS_DEWFORD_SUBROSIA                920
+#define MUS_VS_TRAINER_CADENCEOFHYRULE    903
+#define MUS_VS_TRAINER_CADENCEOFHYRULE_FULL 903
+#define MUS_MINISHROOT                      904
+#define MUS_TRAIL101                        905
+#define MUS_Z_TITLE                         906
+#define MUS_VS_WILD_WOODLANDS               907
+#define MUS_OLDALE_ORDON                    908
+#define MUS_PETALBURG_LONLON                909
+#define MUS_TRAIL104                        910
+#define MUS_POKE_CENTER_FOUNTAIN            911
+#define MUS_POKE_MART_BEEDLE                912
+#define MUS_PETALBURG_FOUNDWOODS            913
+#define MUS_RUSTBORO_CLOCKTOWN              914
+#define MUS_VS_AQUA_MAGMA_YIGA              915
+#define MUS_ENCOUNTER_AQUA_YIGA             916
+#define MUS_GYM_SHRINE                      917
+#define MUS_VS_GYM_LEADER_SHRINE            918
+#define MUS_SAILING_PH                      919
+#define MUS_TRAIL122                        920
+#define MUS_DEWFORD_SUBROSIA                921
 
 #endif  // GUARD_CONSTANTS_SONGS_H
