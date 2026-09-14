@@ -406,7 +406,7 @@ gSongTable::
 	song mus_aqua_magma_hideout, 0, 0
 	song mus_sailing_ph, 0, 0
 	song mus_mt_pyre, 0, 0
-	song mus_slateport, 0, 0
+	song mus_slateport_windfall, 0, 0
 	song mus_mt_pyre_exterior, 0, 0
 	song mus_school, 0, 0
 	song mus_hall_of_fame, 0, 0
@@ -904,6 +904,7 @@ gSongTable::
 	song mus_bw_vs_iris, 0, 0
 	song mus_heal_fairyfountain, 0, 0
 	song mus_birch_lab_zeldahouses, 0, 0
+	song mus_slateport_windfall, 0, 0
 	song mus_vs_trainer_cadenceofhyrule, 0, 0
 	song mus_vs_trainer_cadenceofhyrule_full, 0, 0
 	song mus_minishroot, 0, 0

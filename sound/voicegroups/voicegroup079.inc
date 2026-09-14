@@ -42,7 +42,7 @@ voicegroup079::
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_5, 0, 7, 6, 2
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 60, 0, DirectSoundWaveData_dp_flute_c4_16, 255, 247, 159, 196
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_pizzicato_strings, 255, 226, 0, 38
@@ -50,12 +50,12 @@ voicegroup079::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_keysplit voicegroup006, KeySplitTable2
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_oboe, 43, 188, 103, 165
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_taiko, 255, 0, 255, 235
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0

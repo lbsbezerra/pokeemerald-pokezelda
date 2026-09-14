@@ -2438,3 +2438,6 @@ $(MID_SUBDIR)/se_pc_on_zeldajingle.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_birch_lab_zeldahouses.s: %.s: %.mid
 	$(MID) $< $@ -E -R50 -G033 -V100
+
+$(MID_SUBDIR)/mus_slateport_windfall.s: %.s: %.mid
+	$(MID) $< $@ -E -R50 -G079 -V100
