@@ -348,7 +348,7 @@ gSongTable::
 	song mus_obtain_tmhm, 2, 2
 	song mus_lilycove_museum, 0, 0
 	song mus_trail122, 0, 0
-	song mus_oceanic_museum, 0, 0
+	song mus_oceanic_museum_lakehylia, 0, 0
 	song mus_evolution_intro, 2, 2
 	song mus_evolution, 0, 0
 	song mus_move_deleted, 2, 2
@@ -905,6 +905,7 @@ gSongTable::
 	song mus_heal_fairyfountain, 0, 0
 	song mus_birch_lab_zeldahouses, 0, 0
 	song mus_slateport_windfall, 0, 0
+	song mus_oceanic_museum_lakehylia, 0, 0
 	song mus_vs_trainer_cadenceofhyrule, 0, 0
 	song mus_vs_trainer_cadenceofhyrule_full, 0, 0
 	song mus_minishroot, 0, 0

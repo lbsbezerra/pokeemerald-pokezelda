@@ -2440,4 +2440,7 @@ $(MID_SUBDIR)/mus_birch_lab_zeldahouses.s: %.s: %.mid
 	$(MID) $< $@ -E -R50 -G033 -V100
 
 $(MID_SUBDIR)/mus_slateport_windfall.s: %.s: %.mid
-	$(MID) $< $@ -E -R50 -G079 -V100
+	$(MID) $< $@ -E -R50 -G079 -V115
+
+$(MID_SUBDIR)/mus_oceanic_museum_lakehylia.s: %.s: %.mid
+	$(MID) $< $@ -E -R50 -G023 -V050
