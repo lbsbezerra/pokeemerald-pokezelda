@@ -4593,6 +4593,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_BW_VS_LEGEND                , "MUS-BW-VS-LEGEND"                ) \
     X(MUS_BW_VS_IRIS                  , "MUS-BW-VS-IRIS"                  ) \
     X(MUS_HEAL_FAIRYFOUNTAIN          , "MUS-HEAL-FAIRYFOUNTAIN"          ) \
+    X(MUS_BIRCH_LAB_ZELDAHOUSES       , "MUS-BIRCH-LAB-ZELDAHOUSES"       ) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM              , "SE-USE-ITEM"              ) \

@@ -2435,3 +2435,6 @@ $(MID_SUBDIR)/mus_heal_fairyfountain.s: %.s: %.mid
 
 $(MID_SUBDIR)/se_pc_on_zeldajingle.s: %.s: %.mid
 	$(MID) $< $@ -E -R50 -G127 -V100
+
+$(MID_SUBDIR)/mus_birch_lab_zeldahouses.s: %.s: %.mid
+	$(MID) $< $@ -E -R50 -G033 -V100

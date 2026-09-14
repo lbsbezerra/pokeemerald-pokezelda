@@ -356,7 +356,7 @@ gSongTable::
 	song mus_encounter_male, 0, 0
 	song mus_abandoned_ship, 0, 0
 	song mus_fortree, 0, 0
-	song mus_birch_lab, 0, 0
+	song mus_birch_lab_zeldahouses, 0, 0
 	song mus_b_tower_rs, 0, 0
 	song mus_encounter_swimmer, 0, 0
 	song mus_cave_of_origin, 0, 0
@@ -903,6 +903,7 @@ gSongTable::
 	song mus_bw_vs_legend, 0, 0
 	song mus_bw_vs_iris, 0, 0
 	song mus_heal_fairyfountain, 0, 0
+	song mus_birch_lab_zeldahouses, 0, 0
 	song mus_vs_trainer_cadenceofhyrule, 0, 0
 	song mus_vs_trainer_cadenceofhyrule_full, 0, 0
 	song mus_minishroot, 0, 0
