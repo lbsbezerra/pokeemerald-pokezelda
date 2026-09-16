@@ -2444,3 +2444,6 @@ $(MID_SUBDIR)/mus_slateport_windfall.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_oceanic_museum_lakehylia.s: %.s: %.mid
 	$(MID) $< $@ -E -R50 -G023 -V050
+
+$(MID_SUBDIR)/mus_encounter_aqua_yigafinal.s: %.s: %.mid
+	$(MID) $< $@ -E -R50 -G065 -V100

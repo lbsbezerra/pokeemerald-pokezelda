@@ -392,7 +392,7 @@ gSongTable::
 	song mus_encounter_intense, 0, 0
 	song mus_encounter_cool, 0, 0
 	song mus_route113, 0, 0
-	song mus_encounter_aqua_yiga, 0, 0
+	song mus_encounter_aqua_yigafinal, 0, 0
 	song mus_follow_me, 0, 0
 	song mus_encounter_brendan, 0, 0
 	song mus_ever_grande, 0, 0
@@ -906,6 +906,7 @@ gSongTable::
 	song mus_birch_lab_zeldahouses, 0, 0
 	song mus_slateport_windfall, 0, 0
 	song mus_oceanic_museum_lakehylia, 0, 0
+	song mus_encounter_aqua_yigafinal, 0, 0
 	song mus_vs_trainer_cadenceofhyrule, 0, 0
 	song mus_vs_trainer_cadenceofhyrule_full, 0, 0
 	song mus_minishroot, 0, 0
