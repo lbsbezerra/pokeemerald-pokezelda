@@ -921,7 +921,7 @@ gSongTable::
 	song mus_petalburg_foundwoods, 0, 0
 	song mus_rustboro_clocktown, 0, 0
 	song mus_vs_aqua_magma_yiga, 0, 0
-	song mus_encounter_aqua_yiga, 0, 0
+	song mus_dummy, 0, 0
 	song mus_gym_shrine, 0, 0
 	song mus_vs_gym_leader_shrine, 0, 0
 	song mus_sailing_ph, 0, 0

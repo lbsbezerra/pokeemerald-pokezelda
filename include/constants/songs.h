@@ -976,7 +976,6 @@
 #define MUS_PETALBURG_FOUNDWOODS            917
 #define MUS_RUSTBORO_CLOCKTOWN              918
 #define MUS_VS_AQUA_MAGMA_YIGA              919
-#define MUS_ENCOUNTER_AQUA_YIGA             920
 #define MUS_GYM_SHRINE                      921
 #define MUS_VS_GYM_LEADER_SHRINE            922
 #define MUS_SAILING_PH                      923
