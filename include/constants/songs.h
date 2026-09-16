@@ -962,7 +962,6 @@
 #define MUS_ROUTE118                      0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 
 #define MUS_NONE                          0xFFFF
-#define MUS_VS_TRAINER_CADENCEOFHYRULE    907
 #define MUS_VS_TRAINER_CADENCEOFHYRULE_FULL 907
 #define MUS_MINISHROOT                      908
 #define MUS_TRAIL101                        909

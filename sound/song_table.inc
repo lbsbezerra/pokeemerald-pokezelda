@@ -907,7 +907,7 @@ gSongTable::
 	song mus_slateport_windfall, 0, 0
 	song mus_oceanic_museum_lakehylia, 0, 0
 	song mus_encounter_aqua_yigafinal, 0, 0
-	song mus_vs_trainer_cadenceofhyrule, 0, 0
+	song mus_dummy, 0, 0
 	song mus_vs_trainer_cadenceofhyrule_full, 0, 0
 	song mus_minishroot, 0, 0
 	song mus_trail101, 0, 0

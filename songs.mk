@@ -2370,9 +2370,6 @@ $(MID_SUBDIR)/mus_bw_vs_legend.s: %.s: %.mid
 $(MID_SUBDIR)/mus_bw_vs_iris.s: %.s: %.mid
 	$(MID) $< $@ -E -R0 -G0 -V090
 
-$(MID_SUBDIR)/mus_vs_trainer_cadenceofhyrule.s: %.s: %.mid
-	$(MID) $< $@ -E -R50 -G119 -V100
-
 $(MID_SUBDIR)/mus_vs_trainer_cadenceofhyrule_full.s: %.s: %.mid
 	$(MID) $< $@ -E -R50 -G120 -V100
 
