@@ -2441,3 +2441,6 @@ $(MID_SUBDIR)/mus_oceanic_museum_lakehylia.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_encounter_aqua_yigafinal.s: %.s: %.mid
 	$(MID) $< $@ -E -R50 -G065 -V100
+
+$(MID_SUBDIR)/mus_vs_rival_minishcap.s: %.s: %.mid
+	$(MID) $< $@ -E -R50 -G124 -V100

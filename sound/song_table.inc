@@ -437,7 +437,7 @@ gSongTable::
 	song mus_vs_champion, 0, 0
 	song mus_vs_regi, 0, 0
 	song mus_vs_kyogre_groudon, 0, 0
-	song mus_vs_rival, 0, 0
+	song mus_vs_rival_minishcap, 0, 0
 	song mus_vs_elite_four, 0, 0
 	song mus_vs_aqua_magma_leader, 0, 0
 	song mus_rg_follow_me, 0, 0
@@ -907,7 +907,7 @@ gSongTable::
 	song mus_slateport_windfall, 0, 0
 	song mus_oceanic_museum_lakehylia, 0, 0
 	song mus_encounter_aqua_yigafinal, 0, 0
-	song mus_dummy, 0, 0
+	song mus_vs_rival_minishcap, 0, 0
 	song mus_vs_trainer_cadenceofhyrule_full, 0, 0
 	song mus_minishroot, 0, 0
 	song mus_trail101, 0, 0

@@ -952,12 +952,13 @@
 #define MUS_SLATEPORT_WINDFALL              903
 #define MUS_OCEANIC_MUSEUM_LAKEHYLIA        904
 #define MUS_ENCOUNTER_AQUA_YIGAFINAL        905
+#define MUS_VS_RIVAL_MINISHCAP              906
 
 #define HG_MUSIC_END                      MUS_BW_VS_IRIS
 
 #define SONGS_END                         HG_MUSIC_END
 #define END_SE                            PH_NURSE_SOLO
-#define END_MUS                           MUS_ENCOUNTER_AQUA_YIGAFINAL
+#define END_MUS                           MUS_VS_RIVAL_MINISHCAP
 
 #define MUS_ROUTE118                      0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 
