@@ -388,13 +388,13 @@ gSongTable::
 	song mus_victory_trainer, 0, 0
 	song mus_z_title, 0, 0
 	song mus_intro, 0, 0
-	song mus_encounter_may, 0, 0
+	song mus_encounter_may_picori, 0, 0
 	song mus_encounter_intense, 0, 0
 	song mus_encounter_cool, 0, 0
 	song mus_route113, 0, 0
 	song mus_encounter_aqua_yigafinal, 0, 0
 	song mus_follow_me, 0, 0
-	song mus_encounter_brendan, 0, 0
+	song mus_encounter_may_picori, 0, 0
 	song mus_ever_grande, 0, 0
 	song mus_encounter_suspicious, 0, 0
 	song mus_victory_aqua_magma, 0, 0
@@ -908,6 +908,7 @@ gSongTable::
 	song mus_oceanic_museum_lakehylia, 0, 0
 	song mus_encounter_aqua_yigafinal, 0, 0
 	song mus_vs_rival_minishcap, 0, 0
+	song mus_encounter_may_picori, 0, 0
 	song mus_vs_trainer_cadenceofhyrule_full, 0, 0
 	song mus_minishroot, 0, 0
 	song mus_trail101, 0, 0
