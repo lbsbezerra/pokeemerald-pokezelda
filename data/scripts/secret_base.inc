@@ -697,7 +697,8 @@ SecretBase_Text_DataUnregistered:
 	.string "Data has been unregistered.$"
 
 SecretBase_Text_BootUpPC:
-	.string "{PLAYER} communed with the Blade of Evil's Bane.$"
+	.string "{PLAYER} communed with the Blade of Evil's\n"
+	.string "Bane.$"
 
 SecretBase_Text_WhatWouldYouLikeToDo:
 	.string "What would you like to do?$"

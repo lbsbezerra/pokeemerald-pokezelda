@@ -877,7 +877,8 @@ gText_PokemonTrainerSchoolEmail::
 	.string "… … … … … …$"
 
 gText_PlayerHouseBootPC::
-	.string "{PLAYER} communed with the Blade of Evil's Bane.$"
+	.string "{PLAYER} communed with the Blade of Evil's\n"
+	.string "Bane.$"
 
 gText_PokeblockLinkCanceled::
 	.string "The link was canceled.$"
