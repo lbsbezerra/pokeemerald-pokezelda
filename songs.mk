@@ -2447,3 +2447,6 @@ $(MID_SUBDIR)/mus_vs_rival_minishcap.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_encounter_may_picori.s: %.s: %.mid
 	$(MID) $< $@ -E -R50 -G061 -V100
+
+$(MID_SUBDIR)/mus_dp_poketch_malon.s: %.s: %.mid
+	$(MID) $< $@ -E -R50 -G124 -V100

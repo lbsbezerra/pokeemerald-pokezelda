@@ -954,33 +954,34 @@
 #define MUS_ENCOUNTER_AQUA_YIGAFINAL        905
 #define MUS_VS_RIVAL_MINISHCAP              906
 #define MUS_ENCOUNTER_MAY_PICORI            907
+#define MUS_DP_POKETCH_MALON                908
 
 #define HG_MUSIC_END                      MUS_BW_VS_IRIS
 
 #define SONGS_END                         HG_MUSIC_END
 #define END_SE                            PH_NURSE_SOLO
-#define END_MUS                           MUS_ENCOUNTER_MAY_PICORI
+#define END_MUS                           MUS_DP_POKETCH_MALON
 
 #define MUS_ROUTE118                      0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 
 #define MUS_NONE                          0xFFFF
-#define MUS_VS_TRAINER_CADENCEOFHYRULE_FULL 908
-#define MUS_MINISHROOT                      909
-#define MUS_TRAIL101                        910
-#define MUS_Z_TITLE                         911
-#define MUS_VS_WILD_WOODLANDS               912
-#define MUS_OLDALE_ORDON                    913
-#define MUS_PETALBURG_LONLON                914
-#define MUS_TRAIL104                        915
-#define MUS_POKE_CENTER_FOUNTAIN            916
-#define MUS_POKE_MART_BEEDLE                917
-#define MUS_PETALBURG_FOUNDWOODS            918
-#define MUS_RUSTBORO_CLOCKTOWN              919
-#define MUS_VS_AQUA_MAGMA_YIGA              920
-#define MUS_GYM_SHRINE                      922
-#define MUS_VS_GYM_LEADER_SHRINE            923
-#define MUS_SAILING_PH                      924
-#define MUS_TRAIL122                        925
-#define MUS_DEWFORD_SUBROSIA                926
+#define MUS_VS_TRAINER_CADENCEOFHYRULE_FULL 909
+#define MUS_MINISHROOT                      910
+#define MUS_TRAIL101                        911
+#define MUS_Z_TITLE                         912
+#define MUS_VS_WILD_WOODLANDS               913
+#define MUS_OLDALE_ORDON                    914
+#define MUS_PETALBURG_LONLON                915
+#define MUS_TRAIL104                        916
+#define MUS_POKE_CENTER_FOUNTAIN            917
+#define MUS_POKE_MART_BEEDLE                918
+#define MUS_PETALBURG_FOUNDWOODS            919
+#define MUS_RUSTBORO_CLOCKTOWN              920
+#define MUS_VS_AQUA_MAGMA_YIGA              921
+#define MUS_GYM_SHRINE                      923
+#define MUS_VS_GYM_LEADER_SHRINE            924
+#define MUS_SAILING_PH                      925
+#define MUS_TRAIL122                        926
+#define MUS_DEWFORD_SUBROSIA                927
 
 #endif  // GUARD_CONSTANTS_SONGS_H

@@ -669,7 +669,7 @@ gSongTable::
 	song mus_dp_caught_intro, 2, 2
 	song mus_dp_dex_rating, 2, 2
 	song mus_dp_obtain_badge, 2, 2
-	song mus_dp_poketch, 2, 2
+	song mus_dp_poketch_malon, 0, 0
 	song mus_dp_obtain_tmhm, 2, 2
 	song mus_dp_obtain_accessory, 2, 2
 	song mus_dp_move_deleted, 2, 2
@@ -909,6 +909,7 @@ gSongTable::
 	song mus_encounter_aqua_yigafinal, 0, 0
 	song mus_vs_rival_minishcap, 0, 0
 	song mus_encounter_may_picori, 0, 0
+	song mus_dp_poketch_malon, 0, 0
 	song mus_vs_trainer_cadenceofhyrule_full, 0, 0
 	song mus_minishroot, 0, 0
 	song mus_trail101, 0, 0

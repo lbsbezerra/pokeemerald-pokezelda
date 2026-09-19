@@ -4599,6 +4599,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_ENCOUNTER_AQUA_YIGAFINAL    , "MUS-ENCOUNTER-AQUA-YIGAFINAL"    ) \
     X(MUS_VS_RIVAL_MINISHCAP          , "MUS-VS-RIVAL-MINISHCAP"          ) \
     X(MUS_ENCOUNTER_MAY_PICORI        , "MUS-ENCOUNTER-MAY-PICORI"        ) \
+    X(MUS_DP_POKETCH_MALON            , "MUS-DP-POKETCH-MALON"            ) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM              , "SE-USE-ITEM"              ) \

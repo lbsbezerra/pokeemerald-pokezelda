@@ -10502,6 +10502,18 @@ u16 GetBattleBGM(void)
     }
     else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
     {
+            // Use this song for Wally only. We are replacing Wally with a Malon theme
+        switch (gTrainerBattleOpponent_A)
+        {
+        case TRAINER_WALLY_MAUVILLE:
+        case TRAINER_WALLY_VR_1:
+        case TRAINER_WALLY_VR_2:
+        case TRAINER_WALLY_VR_3:
+        case TRAINER_WALLY_VR_4:
+        case TRAINER_WALLY_VR_5:
+            return MUS_DP_POKETCH_MALON;
+        }
+
         u8 trainerClass;
 
         if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
