@@ -421,7 +421,7 @@ gSongTable::
 	song mus_sootopolis, 0, 0
 	song mus_contest_results, 0, 0
 	song mus_hall_of_fame_room, 0, 0
-	song mus_trick_house, 0, 0
+	song mus_trick_house_songofstorms, 0, 0
 	song mus_encounter_twins, 0, 0
 	song mus_encounter_elite_four, 0, 0
 	song mus_encounter_hiker, 0, 0
@@ -910,6 +910,7 @@ gSongTable::
 	song mus_vs_rival_minishcap, 0, 0
 	song mus_encounter_may_picori, 0, 0
 	song mus_dp_poketch_malon, 0, 0
+	song mus_trick_house_songofstorms, 0, 0
 	song mus_vs_trainer_cadenceofhyrule_full, 0, 0
 	song mus_minishroot, 0, 0
 	song mus_trail101, 0, 0

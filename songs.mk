@@ -2450,3 +2450,6 @@ $(MID_SUBDIR)/mus_encounter_may_picori.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_dp_poketch_malon.s: %.s: %.mid
 	$(MID) $< $@ -E -R50 -G124 -V120
+
+$(MID_SUBDIR)/mus_trick_house_songofstorms.s: %.s: %.mid
+	$(MID) $< $@ -E -R50 -G094 -V100
