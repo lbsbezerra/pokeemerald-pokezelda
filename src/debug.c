@@ -4601,6 +4601,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_ENCOUNTER_MAY_PICORI        , "MUS-ENCOUNTER-MAY-PICORI"        ) \
     X(MUS_DP_POKETCH_MALON            , "MUS-DP-POKETCH-MALON"            ) \
     X(MUS_TRICK_HOUSE_SONGOFSTORMS    , "MUS-TRICK-HOUSE-SONGOFSTORMS"    ) \
+    X(MUS_CONTEST_MAYORMEETING        , "MUS-CONTEST-MAYORMEETING"        ) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM              , "SE-USE-ITEM"              ) \

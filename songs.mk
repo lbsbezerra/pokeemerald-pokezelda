@@ -2453,3 +2453,6 @@ $(MID_SUBDIR)/mus_dp_poketch_malon.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_trick_house_songofstorms.s: %.s: %.mid
 	$(MID) $< $@ -E -R50 -G094 -V100
+
+$(MID_SUBDIR)/mus_contest_mayormeeting.s: %.s: %.mid
+	$(MID) $< $@ -E -R50 -G086 -V100

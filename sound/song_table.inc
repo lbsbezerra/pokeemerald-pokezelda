@@ -911,6 +911,7 @@ gSongTable::
 	song mus_encounter_may_picori, 0, 0
 	song mus_dp_poketch_malon, 0, 0
 	song mus_trick_house_songofstorms, 0, 0
+	song mus_contest_mayormeeting, 0, 0
 	song mus_vs_trainer_cadenceofhyrule_full, 0, 0
 	song mus_minishroot, 0, 0
 	song mus_trail101, 0, 0
