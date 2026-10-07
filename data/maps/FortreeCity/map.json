@@ -160,7 +160,7 @@
     },
     {
       "x": 22,
-      "y": 11,
+      "y": 10,
       "elevation": 0,
       "dest_map": "MAP_FORTREE_CITY_GYM",
       "dest_warp_id": "0"

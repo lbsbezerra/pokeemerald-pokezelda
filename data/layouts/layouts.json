@@ -327,7 +327,7 @@
       "width": 60,
       "height": 20,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mauville",
+      "secondary_tileset": "gTileset_Mauville_Routes",
       "border_filepath": "data/layouts/Route117/border.bin",
       "blockdata_filepath": "data/layouts/Route117/map.bin"
     },
