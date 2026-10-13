@@ -912,6 +912,7 @@ gSongTable::
 	song mus_dp_poketch_malon, 0, 0
 	song mus_trick_house_songofstorms, 0, 0
 	song mus_contest_mayormeeting, 0, 0
+	song mus_rustboro_clocktown, 0, 0
 	song mus_vs_trainer_cadenceofhyrule_full, 0, 0
 	song mus_minishroot, 0, 0
 	song mus_trail101, 0, 0
@@ -923,7 +924,6 @@ gSongTable::
 	song mus_poke_center_fountain, 0, 0
 	song mus_poke_mart_beedle, 0, 0
 	song mus_petalburg_foundwoods, 0, 0
-	song mus_rustboro_clocktown, 0, 0
 	song mus_vs_aqua_magma_yiga, 0, 0
 	song mus_dummy, 0, 0
 	song mus_gym_shrine, 0, 0
