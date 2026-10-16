@@ -2458,4 +2458,4 @@ $(MID_SUBDIR)/mus_contest_mayormeeting.s: %.s: %.mid
 	$(MID) $< $@ -E -R50 -G086 -V127
 
 $(MID_SUBDIR)/mus_route110_twilight.s: %.s: %.mid
-	$(MID) $< $@ -E -R50 -G010 -V100
+	$(MID) $< $@ -E -R50 -G010 -V090

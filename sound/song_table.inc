@@ -333,7 +333,7 @@ gSongTable::
 	song mus_gsc_pewter, 0, 0
 	song mus_c_vs_legend_beast, 0, 0
 	song mus_trail101, 0, 0
-	song mus_route110, 0, 0
+	song mus_route110_twilight, 0, 0
 	song mus_route120, 0, 0
 	song mus_petalburg_lonlon, 0, 0
 	song mus_oldale_ordon, 0, 0
