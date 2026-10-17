@@ -916,6 +916,7 @@ gSongTable::
 	song mus_route110_twilight, 0, 0
 	song mus_b_tower_rs_kakarikobotw, 0, 0
 	song mus_vs_trainer_cadenceofhyrule_full, 0, 0
+	song mus_b_tower_rs_kakarikobattle, MUSIC_PLAYER_BGM, 0
 	song mus_minishroot, 0, 0
 	song mus_trail101, 0, 0
 	song mus_z_title, 0, 0
