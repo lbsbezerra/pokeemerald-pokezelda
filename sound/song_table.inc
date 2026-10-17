@@ -914,6 +914,7 @@ gSongTable::
 	song mus_contest_mayormeeting, 0, 0
 	song mus_rustboro_clocktown, 0, 0
 	song mus_route110_twilight, 0, 0
+	song mus_b_tower_rs_kakarikobotw, 0, 0
 	song mus_vs_trainer_cadenceofhyrule_full, 0, 0
 	song mus_minishroot, 0, 0
 	song mus_trail101, 0, 0

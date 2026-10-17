@@ -4604,6 +4604,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_CONTEST_MAYORMEETING        , "MUS-CONTEST-MAYORMEETING"        ) \
     X(MUS_RUSTBORO_CLOCKTOWN          , "MUS-RUSTBORO-CLOCKTOWN"          ) \
     X(MUS_ROUTE110_TWILIGHT           , "MUS-ROUTE110-TWILIGHT"           ) \
+    X(MUS_B_TOWER_RS_KAKARIKOBOTW     , "MUS-B-TOWER-RS-KAKARIKOBOTW"     ) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM              , "SE-USE-ITEM"              ) \

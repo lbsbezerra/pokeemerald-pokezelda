@@ -2459,3 +2459,6 @@ $(MID_SUBDIR)/mus_contest_mayormeeting.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_route110_twilight.s: %.s: %.mid
 	$(MID) $< $@ -E -R50 -G010 -V090
+
+$(MID_SUBDIR)/mus_b_tower_rs_kakarikobotw.s: %.s: %.mid
+	$(MID) $< $@ -E -R50 -G035 -V100
