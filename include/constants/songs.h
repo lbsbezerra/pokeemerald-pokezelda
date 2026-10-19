@@ -965,18 +965,18 @@
 
 #define SONGS_END                         HG_MUSIC_END
 #define END_SE                            PH_NURSE_SOLO
-#define END_MUS                           MUS_B_TOWER_RS_KAKARIKOBATTLE
+#define END_MUS                           MUS_OLDALE_ORDON
 
 #define MUS_ROUTE118                      0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 
 #define MUS_NONE                          0xFFFF
 #define MUS_VS_TRAINER_CADENCEOFHYRULE_FULL 914
 #define MUS_B_TOWER_RS_KAKARIKOBATTLE       915
-#define MUS_MINISHROOT                      916
-#define MUS_TRAIL101                        917
-#define MUS_Z_TITLE                         918
-#define MUS_VS_WILD_WOODLANDS               919
-#define MUS_OLDALE_ORDON                    920
+#define MUS_OLDALE_ORDON                    916
+#define MUS_MINISHROOT                      917
+#define MUS_TRAIL101                        918
+#define MUS_Z_TITLE                         919
+#define MUS_VS_WILD_WOODLANDS               920
 #define MUS_PETALBURG_LONLON                921
 #define MUS_TRAIL104                        922
 #define MUS_POKE_CENTER_FOUNTAIN            923

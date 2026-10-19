@@ -917,11 +917,11 @@ gSongTable::
 	song mus_b_tower_rs_kakarikobotw, 0, 0
 	song mus_vs_trainer_cadenceofhyrule_full, 0, 0
 	song mus_b_tower_rs_kakarikobattle, 0, 0
+	song mus_oldale_ordon, 0, 0
 	song mus_minishroot, 0, 0
 	song mus_trail101, 0, 0
 	song mus_z_title, 0, 0
 	song mus_vs_wild_woodlands, 0, 0
-	song mus_oldale_ordon, 0, 0
 	song mus_petalburg_lonlon, 0, 0
 	song mus_trail104, 0, 0
 	song mus_poke_center_fountain, 0, 0
