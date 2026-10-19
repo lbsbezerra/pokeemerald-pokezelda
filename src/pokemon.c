@@ -10502,7 +10502,12 @@ u16 GetBattleBGM(void)
     }
     else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
     {
-            // Use this song for Wally only. We are replacing Wally with a Malon theme
+        
+        // If this battle is taking place in a Battle Tent battle room, use the custom tent music. 
+        if (gMapHeader.mapLayoutId == LAYOUT_VERDANTURF_TOWN_BATTLE_TENT_BATTLE_ROOM || gMapHeader.mapLayoutId == LAYOUT_BATTLE_TENT_BATTLE_ROOM) { 
+            return MUS_B_TOWER_RS_KAKARIKOBATTLE; 
+        }
+        // Use this song for Wally only. We are replacing Wally with a Malon theme
         switch (gTrainerBattleOpponent_A)
         {
         case TRAINER_WALLY_MAUVILLE:
