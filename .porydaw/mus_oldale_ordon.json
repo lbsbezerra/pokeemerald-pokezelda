@@ -15,6 +15,7 @@
                 "track": 2
             }
         ],
+        "eventList": false,
         "gridMinDenom": 0,
         "gridTriplet": false,
         "keyHeight": 4,
@@ -24,8 +25,10 @@
         "scrollY": 0,
         "selectedTrack": 0,
         "splitter": [
-            501,
+            483,
+            0,
             150
-        ]
+        ],
+        "tempoLane": false
     }
 }
