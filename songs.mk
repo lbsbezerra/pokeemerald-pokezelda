@@ -2464,4 +2464,4 @@ $(MID_SUBDIR)/mus_b_tower_rs_kakarikobotw.s: %.s: %.mid
 	$(MID) $< $@ -E -R50 -G035 -V100
 
 $(MID_SUBDIR)/mus_b_tower_rs_kakarikobattle.s: %.s: %.mid
-	$(MID) $< $@ -E -R50 -G035 -V100
+	$(MID) $< $@ -E -R50 -G035 -V095
