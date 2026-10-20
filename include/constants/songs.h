@@ -965,7 +965,7 @@
 
 #define SONGS_END                         HG_MUSIC_END
 #define END_SE                            PH_NURSE_SOLO
-#define END_MUS                           MUS_OLDALE_ORDON
+#define END_MUS                           MUS_MINISHROOT
 
 #define MUS_ROUTE118                      0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 
